@@ -1,4 +1,4 @@
 # Staging and publishing profile for yourproject-website.git:
 staging:
   profile: ~
-  whoami:  gh-pages
+  whoami:  asf-site-staging
