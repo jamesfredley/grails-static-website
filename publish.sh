@@ -17,10 +17,11 @@ then
   COMMIT_NAME="${GITHUB_ACTOR}"
 fi
 
-git config --global user.email "${COMMIT_EMAIL}"
-git config --global user.name "${COMMIT_NAME}"
-git config --global credential.helper "store --file=~/.git-credentials"
-echo "https://${GITHUB_ACTOR}:${GH_TOKEN}@github.com" > ~/.git-credentials
+git config --global user.name "$GITHUB_ACTOR"
+git config --global user.email "$GITHUB_ACTOR@users.noreply.github.com"
+git config --global credential.helper store
+# Store credentials
+echo "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com" >> ~/.git-credentials
 
 ./gradlew clean ${GRADLE_TASK} || EXIT_STATUS=$?
 
