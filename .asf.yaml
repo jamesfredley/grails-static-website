@@ -1,0 +1,6 @@
+github:
+  description: "Apache Grails Website"
+  homepage: https://grails.apache.org/
+
+publish:
+  whoami:  asf-site
