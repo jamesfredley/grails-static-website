@@ -10,7 +10,7 @@ import java.text.SimpleDateFormat
 @CompileStatic
 class GuidesFetcher {
 
-    public static final String GUIDES_JSON = 'https://raw.githubusercontent.com/grails/grails-guides/gh-pages/guides.json'
+    public static final String GUIDES_JSON = 'https://raw.githubusercontent.com/grails-guides/grails-guides-template/gh-pages/guides.json'
 
     @CompileDynamic
     static List<Guide> fetchGuides(boolean skipFuture = true) {

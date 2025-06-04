@@ -29,18 +29,18 @@ if [[ $EXIT_STATUS -ne 0 ]]; then
     exit $EXIT_STATUS
 fi
 
-git clone https://${GH_TOKEN}@github.com/${GITHUB_SLUG}.git -b gh-pages gh-pages --single-branch > /dev/null
-cd gh-pages
+git clone https://${GH_TOKEN}@github.com/${GITHUB_SLUG}.git -b ${GH_BRANCH} ${GH_BRANCH} --single-branch > /dev/null
+cd ${GH_BRANCH}
 cp -rv ../build/dist/* .
 if git diff --quiet; then
   echo "No changes in MAIN Website"
 else
   git add -A
-  git commit -a -m "Updating $GITHUB_SLUG gh-pages branch for Github Actions run:$GITHUB_RUN_ID"
+  git commit -a -m "Updating $GITHUB_SLUG ${GH_BRANCH} branch for Github Actions run:$GITHUB_RUN_ID"
   git push origin HEAD
 fi
 
 cd ..
-rm -rf gh-pages
+rm -rf ${GH_BRANCH}
 
 exit $EXIT_STATUS

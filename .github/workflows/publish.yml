@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 jobs:
   build:
-    if: github.repository == 'grails/grails-static-website'
+    if: github.repository == 'apache/grails-static-website'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -30,17 +30,20 @@ jobs:
       - name: Publish Main Site
         run: ./publish.sh
         env:
-          GITHUB_SLUG: grails/grails-static-website
+          GITHUB_SLUG: apache/grails-static-website
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_BRANCH: asf-site-staging
           # AIRTABLE_BASE_ID: ${{ secrets.AIRTABLE_BASE_ID }}
           # AIRTABLE_API_KEY: ${{ secrets.AIRTABLE_API_KEY }}
           GRADLE_ENTERPRISE_BUILD_CACHE_NODE_USER: ${{ secrets.GRADLE_ENTERPRISE_BUILD_CACHE_NODE_USER }}
           GRADLE_ENTERPRISE_BUILD_CACHE_NODE_KEY: ${{ secrets.GRADLE_ENTERPRISE_BUILD_CACHE_NODE_KEY }}
           GRADLE_TASK: build
+          GRAILS_WS_URL: https://grails.staged.apache.org/
       - name: Publish Guides Site
         run: ./publish.sh
         env:
-          GITHUB_SLUG: grails/grails-guides
+          GITHUB_SLUG: grails-guides/grails-guides-template
+          GH_BRANCH: gh-pages
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GRADLE_ENTERPRISE_BUILD_CACHE_NODE_USER: ${{ secrets.GRADLE_ENTERPRISE_BUILD_CACHE_NODE_USER }}
           GRADLE_ENTERPRISE_BUILD_CACHE_NODE_KEY: ${{ secrets.GRADLE_ENTERPRISE_BUILD_CACHE_NODE_KEY }}
