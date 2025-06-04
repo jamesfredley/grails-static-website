@@ -20,7 +20,7 @@ fi
 git config --global user.email "${COMMIT_EMAIL}"
 git config --global user.name "${COMMIT_NAME}"
 git config --global credential.helper "store --file=~/.git-credentials"
-echo "https://$GH_TOKEN:@github.com" > ~/.git-credentials
+echo "https://${GITHUB_ACTOR}:${GH_TOKEN}@github.com" > ~/.git-credentials
 
 ./gradlew clean ${GRADLE_TASK} || EXIT_STATUS=$?
 
