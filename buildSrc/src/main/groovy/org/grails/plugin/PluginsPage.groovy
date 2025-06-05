@@ -196,7 +196,7 @@ class PluginsPage {
         html.div {
             mkp.yieldUnescaped createHeader('Top Rated Plugins')
             div {
-                ul {
+                ul(class: 'plugin') {
                     for (Plugin plugin : topRatedPlugins) {
                         mkp.yieldUnescaped renderSinglePlugin(siteUrl, plugin)
                     }
@@ -304,7 +304,7 @@ class PluginsPage {
     static String renderLatestPlugins(String siteUrl, List<Plugin> topFive) {
         StringWriter writer = new StringWriter()
         MarkupBuilder html = new MarkupBuilder(writer)
-        html.ul {
+        html.ul(class: 'plugin') {
             for (plugin in topFive) {
                 mkp.yieldUnescaped renderSinglePlugin(siteUrl, plugin)
             }

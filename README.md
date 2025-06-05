@@ -61,14 +61,39 @@ The output can be found in the `build/dist` directory.
 
 The easiest way to work locally is to generate the site and setup your Webserver to serve build/dist.
 
-For example with [MAMP](https://www.mamp.info/en/mamp/):
+
+### Using MAMP
+
+Go to [MAMP](https://www.mamp.info/en/mamp/) for installation instructions:
 
 ![](docs/mamp.png)
 
+### Using Pyhton
+
 You can also use Python to serve the directory:
 
-```
+```bash
 python3 -m http.server 8080 --directory build/dist
+```
+
+### Using `npm`
+
+You can use install `live-serve` with `npm` to get live auto-reload:
+
+```bash 
+npm install -g live-server
+```
+
+And then run the server like this:
+
+```bash 
+live-server build/dist
+```
+
+Combining this with `./gradlew` continuously build in a separate shell, you get full reloading:
+
+```bash
+./gradlew build --continuous
 ```
 
 ## Blog Posts
