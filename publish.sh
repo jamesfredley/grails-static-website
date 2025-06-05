@@ -38,7 +38,7 @@ if git diff --quiet; then
 else
   git add -A
   git commit -a -m "Updating $GITHUB_SLUG ${GH_BRANCH} branch for Github Actions run:$GITHUB_RUN_ID"
-  git push origin HEAD
+  git push origin ${GH_BRANCH}
 fi
 
 cd ..
