@@ -8,6 +8,8 @@ on:
   workflow_dispatch:
 jobs:
   build:
+    permissions:
+      contents: write
     if: github.repository == 'apache/grails-static-website'
     runs-on: ubuntu-latest
     steps:
