@@ -1,4 +1,7 @@
-# Staging and publishing profile for yourproject-website.git:
-staging:
-  profile: ~
-  whoami:  asf-site-staging
+github:
+  description: "Apache Grails Website"
+  homepage: https://grails.apache.org/
+
+# Automatically publish to https://grails.apache.org/
+publish:
+  whoami:  asf-site-production
