@@ -74,4 +74,4 @@ static Closure constraints = { value min: 0 }
 
 We would like to thank the Engineering Team at Transitional Data Services for identifying this bug as well as the countless contributions from the folks in  our awesome community.  Without your dedication and enthusiasm, the Grails framework would not be where it is today.  Thank you!
 
-For more technical details about this bug and the patches, please see the [discussion on GitHub](https://github.com/grails/grails-core/issues/12718).
+For more technical details about this bug and the patches, please see the [discussion on GitHub](https://github.com/apache/grails-core/issues/12718).
