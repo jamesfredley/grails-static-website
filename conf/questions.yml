@@ -18,7 +18,7 @@ questions:
   -
     slug: 'question_usage'
     title: 'Where can I ask questions about usage?'
-    answer: 'The best place to get community support is to use the [Apache Grails User mailing-lists](https://grails.apache.org/community.html). Alternatively you can use [Stack Overflow](https://stackoverflow.com/questions/tagged/grails) or [Slack](https://slack.grails.org) Grails Community Slack.'
+    answer: 'The best place to get community support is to use the [Apache Grails User mailing-lists](/community.html). Alternatively you can use [GitHub Discussions](https://github.com/apache/grails-core/discussions) or [Slack](https://slack.grails.org) Grails Community Slack.'
   -
     slug: 'question_socialmedia'
     title: 'Where can I find Grails on social media?'
