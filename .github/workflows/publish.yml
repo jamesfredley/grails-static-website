@@ -40,13 +40,13 @@ jobs:
           GRADLE_ENTERPRISE_BUILD_CACHE_NODE_USER: ${{ secrets.GRADLE_ENTERPRISE_BUILD_CACHE_NODE_USER }}
           GRADLE_ENTERPRISE_BUILD_CACHE_NODE_KEY: ${{ secrets.GRADLE_ENTERPRISE_BUILD_CACHE_NODE_KEY }}
           GRADLE_TASK: build
-          GRAILS_WS_URL: https://grails.staged.apache.org/
+          GRAILS_WS_URL: https://grails.staged.apache.org
       - name: Publish Guides Site
         run: ./publish.sh
         env:
           GITHUB_SLUG: grails-guides/grails-guides-template
           GH_BRANCH: gh-pages
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GRADLE_ENTERPRISE_BUILD_CACHE_NODE_USER: ${{ secrets.GRADLE_ENTERPRISE_BUILD_CACHE_NODE_USER }}
           GRADLE_ENTERPRISE_BUILD_CACHE_NODE_KEY: ${{ secrets.GRADLE_ENTERPRISE_BUILD_CACHE_NODE_KEY }}
           GRADLE_TASK: buildGuide

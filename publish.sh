@@ -19,9 +19,6 @@ fi
 
 git config --global user.name "$GITHUB_ACTOR"
 git config --global user.email "$GITHUB_ACTOR@users.noreply.github.com"
-# git config --global credential.helper store
-# Store credentials
-# echo "https://oauth2:$GITHUB_TOKEN@github.com" > ~/.git-credentials
 
 ./gradlew clean ${GRADLE_TASK} || EXIT_STATUS=$?
 
