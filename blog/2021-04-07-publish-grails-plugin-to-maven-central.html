@@ -75,7 +75,7 @@
 <p><span class="author">By Puneet Behl</span></p>
 <p><span class="date">April 7, 2021</span></p>
 <p>Tags: <a href="https://grails.staged.apache.org/blog/tag/bintray.html"><span class="hashtag">#bintray</span></a> <a href="https://grails.staged.apache.org/blog/tag/plugins.html"><span class="hashtag">#plugins</span></a></p>
-<p>Beginning May 1, 2021, you will <a href="https://grails.org/blog/2021-02-12-alerts-regarding-bintray-sunset.html">no longer be able to publish your Grails plugins/artifacts to JFrog Bintray</a>. We have already copied most of the Grails plugins from JFrog Bintray to the <a href="https://repo.grails.org">Grails Artifactory</a>, which allows us to resolve those artifacts. Going forward, we recommend that you start publishing artifacts to Maven Central.</p>
+<p>Beginning May 1, 2021, you will <a href="/blog/2021-02-12-alerts-regarding-bintray-sunset.html">no longer be able to publish your Grails plugins/artifacts to JFrog Bintray</a>. We have already copied most of the Grails plugins from JFrog Bintray to the <a href="https://repo.grails.org">Grails Artifactory</a>, which allows us to resolve those artifacts. Going forward, we recommend that you start publishing artifacts to Maven Central.</p>
 <p>In this post, we outline how to publish Grails plugins to Maven Central. For detailed information, we also suggest checking <a href="https://central.sonatype.org/publish/publish-guide/">Sonatype OSSRH Guide</a>.</p>
 <p>The Sonatype’s OSSRH service is the primary place to publish plugins to the Central repository. In order to use OSSRH, you need to take care of a few prerequisites and follow some basic steps.</p>
 <h2>Prerequisites</h2>
@@ -376,7 +376,7 @@ apply plugin: &quot;io.github.gradle-nexus.publish-plugin&quot;
 </ol>
 <p>To trigger a release, create a new release from the GitHub releases page. Here is a sample <a href="https://github.com/puneetbehl/myplugin">Grails Plugin</a> that's configured to publish to Maven Central.</p>
 <h2>Update Information on Grails Plugin Portal</h2>
-<p>The <a href="https://grails.org/plugins.html">Grails Plugin Portal</a> uses the <a href="https://raw.githubusercontent.com/grails/grails-plugins-metadata/main/grails-plugins.json">grails-plugins.json</a> metadata file to display plugin information.</p>
+<p>The <a href="/plugins.html">Grails Plugin Portal</a> uses the <a href="https://raw.githubusercontent.com/grails/grails-plugins-metadata/main/grails-plugins.json">grails-plugins.json</a> metadata file to display plugin information.</p>
 <p>The metadata is hosted at <a href="https://github.com/grails/grails-plugins-metadata/blob/main/grails-plugins.json">https://github.com/grails/grails-plugins-metadata/blob/main/grails-plugins.json</a>. When you publish a new plugin or release an existing plugin, you must send a pull request to this file to update the information on the portal.</p>
 <ol>
 <li>
