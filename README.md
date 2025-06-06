@@ -68,7 +68,7 @@ Go to [MAMP](https://www.mamp.info/en/mamp/) for installation instructions:
 
 ![](docs/mamp.png)
 
-### Using Pyhton
+### Using Python
 
 You can also use Python to serve the directory:
 
