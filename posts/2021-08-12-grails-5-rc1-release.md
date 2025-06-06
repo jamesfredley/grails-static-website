@@ -12,7 +12,7 @@ image: grails-blog-index-3.png
 
 [%date]
 
-The [Grails® Foundation](https://grails.org/foundation/index.html) is pleased to announce the first release candidate of [Grails framework 5.0.0](https://github.com/grails/grails-core/releases/tag/v5.0.0.RC1)! With this release, we are one step closer to the Grails framework's next GA release!
+The Grails® Foundation is pleased to announce the first release candidate of [Grails framework 5.0.0](https://github.com/grails/grails-core/releases/tag/v5.0.0.RC1)! With this release, we are one step closer to the Grails framework's next GA release!
 
 ## Overview
 

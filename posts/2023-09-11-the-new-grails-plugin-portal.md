@@ -14,7 +14,7 @@ image: grails-blog-index-3.png
 
 Hey there, Grails enthusiasts! Are you ready for some exciting news? We're thrilled to introduce the revamped Grails Plugin Portal, and let us tell you, it's a game-changer! This dynamic portal is now completely static and hosted on GitHub, offering you a seamless and efficient experience in exploring Grails plugins.
 
-![Grails Plugin Portal!](https://grails.org/blog/2023-09-11-new-grails-plugin-portal.png)
+![Grails Plugin Portal!](/blog/2023-09-11-new-grails-plugin-portal.png)
 
 ## A Glimpse of the Future: Grails Plugin Portal Redesigned
 
@@ -76,4 +76,4 @@ But here's the exciting part: the Grails Plugin Portal is not just a resource; i
 
 The new Grails Plugin Portal is your gateway to a brighter future in Grails development. With its static structure, lightning-fast search, and curated lists of top-rated and latest release plugins, it's your one-stop-shop for all things Grails. Come on in, explore, discover, and become an active part of the Grails community. Let's build amazing Grails applications together with this reimagined portal!
 
-Ready to get started? Visit the [Grails Plugin Portal](https://grails.org/plugins.html) today!
+Ready to get started? Visit the [Grails Plugin Portal](/plugins.html) today!

@@ -39,7 +39,7 @@ You can get more info by running:
 
 ## Generating the MAIN site
 
-[https://grails.org](https://grails.org)
+[https://grails.apache.org](https://grails.apache.org)
 
 ```bash
 ./gradlew build --console=plain
@@ -208,7 +208,7 @@ Tags: #angular
 
 Release announcements should be tagged with `release`.
 
-Check the [list of tags](https://grails.org/blog/index.html) and try to reuse them.
+Check the [list of tags](https://grails.apache.org/blog/index.html) and try to reuse them.
 
 #### Code Highlighting
 

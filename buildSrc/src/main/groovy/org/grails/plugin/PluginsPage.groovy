@@ -116,7 +116,7 @@ class PluginsPage {
     @CompileDynamic
     static String linksMenu(String siteUrl) {
         List<Map<String, String>> links = [
-                [url: "https://grails.org/blog/2021-04-07-publish-grails-plugin-to-maven-central.html", title: "Publishing Guide"],
+                [url: "https://grails.apache.org/blog/2021-04-07-publish-grails-plugin-to-maven-central.html", title: "Publishing Guide"],
                 [url: "https://github.com/grails/grails-plugins-metadata", title: "Portal on Github"],
         ]
 
