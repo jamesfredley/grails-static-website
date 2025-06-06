@@ -34,19 +34,20 @@ jobs:
         env:
           GITHUB_SLUG: apache/grails-static-website
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GH_BRANCH: asf-site-staging
+          GH_BRANCH: asf-site-production
           # AIRTABLE_BASE_ID: ${{ secrets.AIRTABLE_BASE_ID }}
           # AIRTABLE_API_KEY: ${{ secrets.AIRTABLE_API_KEY }}
           GRADLE_ENTERPRISE_BUILD_CACHE_NODE_USER: ${{ secrets.GRADLE_ENTERPRISE_BUILD_CACHE_NODE_USER }}
           GRADLE_ENTERPRISE_BUILD_CACHE_NODE_KEY: ${{ secrets.GRADLE_ENTERPRISE_BUILD_CACHE_NODE_KEY }}
           GRADLE_TASK: build
-          GRAILS_WS_URL: https://grails.staged.apache.org
-      - name: Publish Guides Site
-        run: ./publish.sh
-        env:
-          GITHUB_SLUG: grails-guides/grails-guides-template
-          GH_BRANCH: gh-pages
-          GH_TOKEN: ${{ secrets.GRAILS_GHTOKEN }}
-          GRADLE_ENTERPRISE_BUILD_CACHE_NODE_USER: ${{ secrets.GRADLE_ENTERPRISE_BUILD_CACHE_NODE_USER }}
-          GRADLE_ENTERPRISE_BUILD_CACHE_NODE_KEY: ${{ secrets.GRADLE_ENTERPRISE_BUILD_CACHE_NODE_KEY }}
-          GRADLE_TASK: buildGuide
+          GRAILS_WS_URL: https://grails.apache.org
+      # TODO Fix Grails Guide Publishing    
+      # - name: Publish Guides Site
+      #   run: ./publish.sh
+      #   env:
+      #     GITHUB_SLUG: grails-guides/grails-guides-template
+      #     GH_BRANCH: gh-pages
+      #     GH_TOKEN: ${{ secrets.GRAILS_GHTOKEN }}
+      #     GRADLE_ENTERPRISE_BUILD_CACHE_NODE_USER: ${{ secrets.GRADLE_ENTERPRISE_BUILD_CACHE_NODE_USER }}
+      #     GRADLE_ENTERPRISE_BUILD_CACHE_NODE_KEY: ${{ secrets.GRADLE_ENTERPRISE_BUILD_CACHE_NODE_KEY }}
+      #     GRADLE_TASK: buildGuide
