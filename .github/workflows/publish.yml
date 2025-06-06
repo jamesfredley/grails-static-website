@@ -40,7 +40,7 @@ jobs:
           GRADLE_ENTERPRISE_BUILD_CACHE_NODE_USER: ${{ secrets.GRADLE_ENTERPRISE_BUILD_CACHE_NODE_USER }}
           GRADLE_ENTERPRISE_BUILD_CACHE_NODE_KEY: ${{ secrets.GRADLE_ENTERPRISE_BUILD_CACHE_NODE_KEY }}
           GRADLE_TASK: build
-          GRAILS_WS_URL: https://grails.staged.apache.org/
+          GRAILS_WS_URL: https://grails.staged.apache.org
       - name: Publish Guides Site
         run: ./publish.sh
         env:
