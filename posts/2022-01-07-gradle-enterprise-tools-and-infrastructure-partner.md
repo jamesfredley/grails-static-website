@@ -24,7 +24,7 @@ We’re delighted to have Gradle on board as a Tools and Infrastructure Partner.
 
 The Grails Foundation is a not-for-profit organization that supports the Grails framework. The Foundation not only builds and supports an ecosystem of documentation, functionality, and services, it promotes and evangelizes the Framework as a leading technology in the JVM space. The generous support of our Corporate Sponsors allows the Foundation to continue to ensure technical innovation and advancement of the Framework as a free and open public-use software development toolkit for our growing global community.
 
-To learn more about how you or your organization can support this Foundation, please [check us out]()!
+To learn more about how you or your organization can support this Foundation, please [check us out](/)!
 
 
 
