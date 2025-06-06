@@ -19,9 +19,9 @@ fi
 
 git config --global user.name "$GITHUB_ACTOR"
 git config --global user.email "$GITHUB_ACTOR@users.noreply.github.com"
-git config --global credential.helper store
+# git config --global credential.helper store
 # Store credentials
-echo "https://oauth2:$GITHUB_TOKEN@github.com" > ~/.git-credentials
+# echo "https://oauth2:$GITHUB_TOKEN@github.com" > ~/.git-credentials
 
 ./gradlew clean ${GRADLE_TASK} || EXIT_STATUS=$?
 
@@ -38,7 +38,7 @@ if git diff --quiet; then
 else
   git add -A
   git commit -a -m "Updating $GITHUB_SLUG ${GH_BRANCH} branch for Github Actions run:$GITHUB_RUN_ID"
-  git push https://${GH_TOKEN}@github.com/${GITHUB_SLUG}.git ${GH_BRANCH}
+  git push https://oauth2:${GH_TOKEN}@github.com/${GITHUB_SLUG}.git ${GH_BRANCH}
 fi
 
 cd ..
