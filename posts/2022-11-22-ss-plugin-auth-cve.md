@@ -49,4 +49,4 @@ If you are unable to upgrade to a patched version of the plugin, you can work ar
 
 The Grails Foundation and the Grails development team take application security very seriously. We are continuing to research and monitor this vulnerability and will update this post with new information as it is discovered.
 
-If you have questions about this vulnerability or need assistance on upgrades or workarounds, please see the [discussion on GitHub](https://github.com/apache/grails-spring-securityissues/844) or contact us at [security@grails.org](mailto:security@grails.org).
+If you have questions about this vulnerability or need assistance on upgrades or workarounds, please see the [discussion on GitHub](https://github.com/apache/grails-spring-securityissues/844) or contact us at [security@apache.org](mailto:security@apache.org).
