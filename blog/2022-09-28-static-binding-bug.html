@@ -91,7 +91,7 @@
 <h2>Resolution</h2>
 <p>The Grails Team recommends that all Grails applications be upgraded to a patched Grails release. Grails 4.x applications can be upgraded to version 4.1.2 or higher, and Grails 5.x applications can be upgraded to 5.2.3 or higher.</p>
 <p>We have released a patched version of Grails 3 for this bug.  Grails 3.x applications can be upgraded to version 3.3.16.</p>
-<p>Please note that versions 1, 2, and 3 of the Grails framework have reached end of support.  We strongly recommend that applications built with these versions be upgraded to an actively maintained version of the Framework. Additionally, the <a href="https://grails.org/foundation/">Grails Foundation</a> provides <a href="https://grails.org/support.html">Commercial Support options</a> for Grails framework versions 3, 4, and 5.</p>
+<p>Please note that versions 1, 2, and 3 of the Grails framework have reached end of support.  We strongly recommend that applications built with these versions be upgraded to an actively maintained version of the Framework. Additionally, the Grails Foundation provides <a href="/support.html">Commercial Support options</a> for Grails framework versions 3, 4, and 5.</p>
 <p>If you are unable to upgrade to a patched version of the Framework, you can make a couple of minor adjustments to work around the issue.</p>
 <p>First, if your application makes explicit calls to <strong>bindData</strong>, those calls should be reviewed and adjusted to avoid binding to static properties of the target instance's class.</p>
 <p>Second, you can prevent data binding to static properties by marking them as <strong>final</strong>. For example:</p>
