@@ -79,7 +79,7 @@
 <p>Why?</p>
 <p>Autowiring a service into a domain class can have a big performance impact.</p>
 <p>Imagine you query 1,000 records from a database, and those records are mapped into a GORM entities. Injecting a service into each of those 1,000 GORM entities will have a performance cost.</p>
-<p>Thus, <a href="https://github.com/grails/grails-core/releases/tag/v3.2.8">starting with Grails<sup>®</sup> 3.2.8</a> auto wiring of GORM entities is disabled when you create an app from scratch. In Grails 3.3.0 or above it is disabled by default.</p>
+<p>Thus, <a href="https://github.com/apache/grails-core/releases/tag/v3.2.8">starting with Grails<sup>®</sup> 3.2.8</a> auto wiring of GORM entities is disabled when you create an app from scratch. In Grails 3.3.0 or above it is disabled by default.</p>
 <p>Let me illustrate this with an example.</p>
 <p>The following code will not get the service <em>greetingService</em> injected into a domain class unless you enable auto wiring.</p>
 <pre><code class="language-groovy">package demo
@@ -200,7 +200,7 @@ class HelloController {
                                                                                       alt='LinkedIn Icon'/></a>
                 </li>
                 <li>
-                    <a href='https://github.com/grails/'><img class='' src='https://grails.staged.apache.org/images/github.svg'
+                    <a href='https://github.com/apache/grails-core'><img class='' src='https://grails.staged.apache.org/images/github.svg'
                                                               alt='Github Icon'/></a>
                 </li>
                 <li style="margin-bottom:10px;">

@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Blog | Grails Framework</title><link>https://grails.staged.apache.org</link><description>A powerful Groovy-based web application framework for the JVM built on top of Spring Boot</description><pubDate>Fri, 06 Jun 2025 21:47:40 GMT</pubDate><item><title>Grails 7.0.0-M3 - Release Announcement</title><link>https://grails.staged.apache.org/blog/2025-03-05-grails-7-m3.html</link><description><![CDATA[</p>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Blog | Grails Framework</title><link>https://grails.staged.apache.org</link><description>A powerful Groovy-based web application framework for the JVM built on top of Spring Boot</description><pubDate>Fri, 06 Jun 2025 22:13:52 GMT</pubDate><item><title>Grails 7.0.0-M3 - Release Announcement</title><link>https://grails.staged.apache.org/blog/2025-03-05-grails-7-m3.html</link><description><![CDATA[</p>
 <p>The Grails Foundation is excited for the release of Grails Framework 7.0.0-M3. <br />
-We encourage you to try this pre-release and provide your feedback <a href="https://github.com/grails/grails-core/issues">here</a>.</p>
+We encourage you to try this pre-release and provide your feedback <a href="https://github.com/apache/grails-core/issues">here</a>.</p>
 <p>The next milestone is planned to be released under the Apache Software Foundation as Apache Grails 7.0.0-M4.</p>
 <p>NOTE: Due to a release problem, 7.0.0-M2 was skipped.</p>
 <h2>Mailing Lists Changes</h2>
@@ -28,7 +28,7 @@ Existing issues and PRs have been migrated when possible.</li>
 <li>Consolidated 6 Spring Security plugins into the Spring Security Core Git repository.</li>
 <li>Updated the Web and Base Grails profiles to generate runnable Grails 7 applications.</li>
 <li>Changed so that <code>hibernate-ehcache</code> is no longer provided by the <code>hibernate5</code> plugin.
-<a href="https://github.com/grails/grails-core/blob/7.0.x/UPGRADE7.md">See details</a></li>
+<a href="https://github.com/apache/grails-core/blob/7.0.x/UPGRADE7.md">See details</a></li>
 <li>Fixed documentation (asciidoc, groovydoc &amp; javadoc) generation and publishing across many projects.</li>
 <li>Ensured tests run during build and CI across many projects.</li>
 <li>Updated <code>ContainerGebSpec</code> in <code>geb</code> with:
@@ -295,7 +295,7 @@ the future. Happy coding!</p>]]></description><author>James Fredley</author><gui
 <li><code>org.apache.tomcat:tomcat-jdbc</code> to version 9.0.98</li>
 <li><code>org.apache.tomcat.embed:tomcat-embed-core</code> to version 9.0.98</li>
 </ul>
-<p>These upgrades ensure that Grails 6.2.3 remains compatible with the latest libraries and tools, providing developers with a robust and reliable environment. We recommend checking out the <a href="https://github.com/grails/grails-core/releases/tag/v6.2.3">GitHub release page</a> for more information.</p>
+<p>These upgrades ensure that Grails 6.2.3 remains compatible with the latest libraries and tools, providing developers with a robust and reliable environment. We recommend checking out the <a href="https://github.com/apache/grails-core/releases/tag/v6.2.3">GitHub release page</a> for more information.</p>
 <h2>Installing Grails 6.2.3</h2>
 <p>You can get started with Grails 6.2.3 today by visiting our <a href="https://start.grails.org/">official website</a>. Alternatively, you can quickly install Grails 6.2.3 using the <a href="https://sdkman.io/">SDKMan</a>.</p>
 <ol>
@@ -371,7 +371,7 @@ Grails leader and a great person. Please keep up the fantastic work!</p>
 <p>Thank you, James!</p>
 <p>Join the <a href="https://grails.slack.com">Grails Slack community</a>, share your feedback, and contribute to making Grails framework even better in the future. Happy coding!</p>]]></description><author>Jeff Scott Brown</author><guid>2025-01-02-grails-community-rockstar-fredley</guid><pubDate>Thu, 02 Jan 2025 00:00:00 GMT</pubDate></item><item><title>Grails 7.0.0-M1 - Release Announcement</title><link>https://grails.staged.apache.org/blog/2024-12-23-grails-7-m1.html</link><description><![CDATA[</p>
 <p>The Grails Foundation is excited for the release of Grails Framework 7.0.0-M1.<br />
-We encourage you to try this pre-release and provide your feedback <a href="https://github.com/grails/grails-core/issues">here</a>.</p>
+We encourage you to try this pre-release and provide your feedback <a href="https://github.com/apache/grails-core/issues">here</a>.</p>
 <h2>What's Changed</h2>
 <ul>
 <li>New minimum versions introduced:
@@ -396,25 +396,25 @@ We encourage you to try this pre-release and provide your feedback <a href="http
 <li>Spring Boot 3.4.1 &amp; Spring Framework 6.2.1, including transition from <code>javax</code> to <code>jakarta</code> namespace.</li>
 </ol>
 </li>
-<li>Added default support for containerized browser testing using <a href="https://java.testcontainers.org/">Testcontainers</a> through the <a href="https://github.com/grails/geb">Geb Grails Plugin</a>, eliminating web browser version synchronization issues. A <a href="https://github.com/grails/geb?tab=readme-ov-file#containergebspec-recommended">container runtime environment</a> is now required for Geb functional and integration tests.
+<li>Added default support for containerized browser testing using <a href="https://java.testcontainers.org/">Testcontainers</a> through the <a href="https://github.com/apache/grails-core/tree/HEAD/grails-geb#readme">Geb Grails Plugin</a>, eliminating web browser version synchronization issues. A <a href="pache/grails-core/tree/HEAD/grails-geb#containergebspec-recommended">container runtime environment</a> is now required for Geb functional and integration tests.
 <ol>
-<li>This has also been backported for Grails 6.x compatiblility via <a href="https://github.com/grails/geb/releases/tag/v4.1.1">Geb 4.1.1</a></li>
+<li>This has also been backported for Grails 6.x compatiblility via <a href="https://github.com/apache/grails-geb/releases/tag/v4.1.1">Geb 4.1.1</a></li>
 </ol>
 </li>
 <li><a href="https://java.testcontainers.org/">Testcontainers</a> features are also available on <a href="https://start.grails.org/">Grails Forge</a> and Grails Forge CLI for MySQL, PostgreSQL, SQL Server and MongoDB.</li>
-<li>Support for Live Reload via Hotswap Agent: <a href="https://github.com/grails/grails-forge/issues/445">current integration details</a>.  This was made possible by the removal of the default Micronaut parent application context.</li>
+<li>Support for Live Reload via Hotswap Agent: <a href="https://github.com/apache/grails-forge/issues/445">current integration details</a>.  This was made possible by the removal of the default Micronaut parent application context.</li>
 <li>Reintroduced the <code>grails-shell</code>, <code>grails-wrapper</code> and <code>grails-profiles</code> that were removed in Grails 6.
 <ol>
 <li>Update to the latest wrapper release based on Grails version with <code>./grailsw update-wrapper</code></li>
 </ol>
 </li>
-<li>Updated the default styling to use Bootstrap 5.3.3. Both <a href="https://github.com/grails/scaffolding">Scaffolding</a> and <a href="https://github.com/gpc/fields">Fields</a> now support Bootstrap classes.</li>
+<li>Updated the default styling to use Bootstrap 5.3.3. Both <a href="https://github.com/apache/grails-core/tree/HEAD/grails-scaffolding#readme">Scaffolding</a> and <a href="https://github.com/apache/grails-core/tree/HEAD/grails-fields#readme">Fields</a> now support Bootstrap classes.</li>
 <li>Reduced deployment sizes (currently pending, due to Graalvm dependencies required for test and bootRun by <code>asset-pipeline</code>).</li>
 <li>Enhanced the <a href="https://mvnrepository.com/artifact/org.grails/grails-bom">Grails BOM</a> by adding more versions and extending the <a href="https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-dependencies">Spring Boot BOM</a> for streamlined dependency management. Grails Gradle Plugins apply the BOM by default. If using <code>buildSrc</code>, ensure it is manually applied.</li>
 <li>Removed the <code>-plain</code> suffix from the JAR artifact output in Grails Plugin projects.</li>
 <li>Disabled all artifact outputs except the JAR artifact for the <code>assemble</code> task in Grails Plugin projects.</li>
 <li>Introduced a new tag, <code>g:formActionSubmit</code>, to support submitting forms to different actions. The <code>g:actionSubmit</code> tag is now deprecated and will be removed in a future release.</li>
-<li>Introduced a new annotation, <code>@Scaffold</code>, for Controllers and Services to eliminate common boilerplate in the <a href="https://github.com/grails/scaffolding">Scaffolding Plugin</a>.</li>
+<li>Introduced a new annotation, <code>@Scaffold</code>, for Controllers and Services to eliminate common boilerplate in the <a href="https://github.com/apache/grails-core/tree/HEAD/grails-scaffolding#readme">Scaffolding Plugin</a>.</li>
 <li>Resolved multiple issues related to Controller namespace support.</li>
 <li>Begun the process of discontinuing bean overriding in the core framework by adopting standard <a href="https://docs.spring.io/spring-boot/reference/using/auto-configuration.html">Spring Auto-configuration</a>.</li>
 <li>Enhanced the <code>g:form</code> tag to include CSRF protection when Spring Security CSRF is enabled.</li>
@@ -676,7 +676,7 @@ With a hopeful outlook towards the future and a deep sense of gratitude, we eage
 <li><code>org.mongodb:mongo-driver</code> to version 4.11.5</li>
 <li>And many more transitive dependencies.</li>
 </ul>
-<p>These upgrades ensure that Grails 6.2.2 remains compatible with the latest libraries and tools, providing developers with a robust and reliable environment. We recommend checking out the <a href="https://github.com/grails/grails-core/releases/tag/v6.2.2">GitHub release page</a> for more information.</p>
+<p>These upgrades ensure that Grails 6.2.2 remains compatible with the latest libraries and tools, providing developers with a robust and reliable environment. We recommend checking out the <a href="https://github.com/apache/grails-core/releases/tag/v6.2.2">GitHub release page</a> for more information.</p>
 <h2>Installing Grails 6.2.2</h2>
 <p>You can get started with Grails 6.2.2 today by visiting our <a href="https://start.grails.org/">official website</a>. Alternatively, you can quickly install Grails 6.2.2 using the <a href="https://sdkman.io/">SDKMan</a>.</p>
 <ol>
@@ -789,7 +789,7 @@ grailsGradlePluginVersion=6.2.3
 <li><code>org.grails.profiles:angular</code> to version 9.0.1</li>
 <li>And many more transitive dependencies.</li>
 </ul>
-<p>These upgrades ensure that Grails 6.2.1 remains compatible with the latest libraries and tools, providing developers with a robust and reliable environment. We recommend checking out the <a href="https://github.com/grails/grails-core/releases/tag/v6.2.1">GitHub release page</a> for more information.</p>
+<p>These upgrades ensure that Grails 6.2.1 remains compatible with the latest libraries and tools, providing developers with a robust and reliable environment. We recommend checking out the <a href="https://github.com/apache/grails-core/releases/tag/v6.2.1">GitHub release page</a> for more information.</p>
 <h2>Installing Grails 6.2.1</h2>
 <p>You can get started with Grails 6.2.1 today by visiting our <a href="https://start.grails.org/">official website</a>. Alternatively, you can quickly install Grails 6.2.1 using the <a href="https://sdkman.io/">SDKMan</a>.</p>
 <ol>
@@ -913,10 +913,10 @@ we are all defining the way forward and your help is appreciated.</p>]]></descri
 <h2>Protecting Your Applications</h2>
 <p>The Grails Team recommends that all Grails framework applications upgrade to a patched version of the framework. Patches are available for Grails in these versions:</p>
 <ul>
-<li><a href="https://github.com/grails/grails-core/releases/tag/v6.1.0">6.1.0</a></li>
-<li><a href="https://github.com/grails/grails-core/releases/tag/v5.3.6">5.3.6</a></li>
-<li><a href="https://github.com/grails/grails-core/releases/tag/v4.1.4">4.1.4</a></li>
-<li><a href="https://github.com/grails/grails-core/releases/tag/v3.3.18">3.3.18</a></li>
+<li><a href="https://github.com/apache/grails-core/releases/tag/v6.1.0">6.1.0</a></li>
+<li><a href="https://github.com/apache/grails-core/releases/tag/v5.3.6">5.3.6</a></li>
+<li><a href="https://github.com/apache/grails-core/releases/tag/v4.1.4">4.1.4</a></li>
+<li><a href="https://github.com/apache/grails-core/releases/tag/v3.3.18">3.3.18</a></li>
 </ul>
 <p>(<strong>2024 Jan 29 Update:</strong> An earlier revision of this blog post recommended release versions that patched the vulnerability but unfortunately introduced an unrelated defect.
 This defect has been fixed, and the recommended versions above reflect the patched, fixed releases.)</p>
@@ -924,7 +924,7 @@ This defect has been fixed, and the recommended versions above reflect the patch
 <p>No workaround is possible for this vulnerability except to avoid data binding altogether.</p>
 <h2>Support</h2>
 <p>The Grails Foundation and the Grails development team take application security very seriously. We continue to research and monitor this vulnerability and will post updates with new information as it is discovered.</p>
-<p>If you have questions about this vulnerability or need assistance with upgrades or workarounds, please join the <a href="https://github.com/grails/grails-core/issues/13302">discussion on GitHub</a> or contact us at <a href="mailto:security@grails.org?subject=CVE-2023-46131">security@grails.org</a>.</p>]]></description><author>Matthew Moss</author><guid>2023-12-20-cve-data-binding-dos</guid><pubDate>Wed, 20 Dec 2023 00:00:00 GMT</pubDate></item><item><title>Introducing Grails Framework 6.1.0 Release</title><link>https://grails.staged.apache.org/blog/2023-11-14-introducing-grails-6_1_0.html</link><description><![CDATA[</p>
+<p>If you have questions about this vulnerability or need assistance with upgrades or workarounds, please join the <a href="https://github.com/apache/grails-core/issues/13302">discussion on GitHub</a> or contact us at <a href="mailto:security@grails.org?subject=CVE-2023-46131">security@grails.org</a>.</p>]]></description><author>Matthew Moss</author><guid>2023-12-20-cve-data-binding-dos</guid><pubDate>Wed, 20 Dec 2023 00:00:00 GMT</pubDate></item><item><title>Introducing Grails Framework 6.1.0 Release</title><link>https://grails.staged.apache.org/blog/2023-11-14-introducing-grails-6_1_0.html</link><description><![CDATA[</p>
 <p>The Grails Foundation is excited to announce the release of Grails Framework 6.1.0! This release comes with a host of changes, bug-fixes, and improvements that will further enhance your experience with the Grails framework . Grails continues to be a powerful and efficient framework for building web applications in Groovy, and this latest version takes it to the next level. Let's dive into what's new in Grails 6.1.0.</p>
 <h2>What's Changed</h2>
 <p>In this release, we have made several changes to improve the framework's performance and maintainability. Some of the notable changes include:</p>
@@ -951,7 +951,7 @@ This defect has been fixed, and the recommended versions above reflect the patch
 <p>Going Further (JDK 17) - Jakarta compatible SiteMesh 3.2 is already available. Sitemesh 3 supports JDK 17, making it an easier transition to future Grails releases, such as Grails 7.0.</p>
 </li>
 <li>
-<p>To learn more about updates around Grails and Sitemesh, please <a href="https://github.com/grails/grails-core/issues/13058">review the discussion</a>. This discussion provides insights into the decisions and considerations made during the decoupling process.</p>
+<p>To learn more about updates around Grails and Sitemesh, please <a href="https://github.com/apache/grails-core/issues/13058">review the discussion</a>. This discussion provides insights into the decisions and considerations made during the decoupling process.</p>
 </li>
 </ol>
 <p>These changes aim to provide developers with more choices and the ability to use the Sitemesh version that best suits their application requirements.</p>
@@ -989,7 +989,7 @@ This defect has been fixed, and the recommended versions above reflect the patch
 <li><code>JUnit Jupiter</code> to 5.10.0, and <code>JUnit Platform</code> to 1.10.0.</li>
 <li>And many more.</li>
 </ul>
-<p>These upgrades ensure that Grails 6.1.0 remains compatible with the latest libraries and tools, providing developers with a robust and reliable environment. We recommend checking out the <a href="https://github.com/grails/grails-core/releases/tag/v6.1.0">GitHub release page</a> for more information.</p>
+<p>These upgrades ensure that Grails 6.1.0 remains compatible with the latest libraries and tools, providing developers with a robust and reliable environment. We recommend checking out the <a href="https://github.com/apache/grails-core/releases/tag/v6.1.0">GitHub release page</a> for more information.</p>
 <h2>Installing Grails 6.1.0</h2>
 <p>You can get started with Grails 6.1.0 today by visiting our <a href="https://start.grails.org/">official website</a>. Alternatively, you can quickly install Grails 6.1.0 using the <a href="https://sdkman.io/">SDKMan</a>.</p>
 <ol>
@@ -1049,7 +1049,7 @@ grailsGradlePluginVersion=6.1.0
 <p>Hey there, Grails enthusiasts! Are you ready for some exciting news? We're thrilled to introduce the revamped Grails Plugin Portal, and let us tell you, it's a game-changer! This dynamic portal is now completely static and hosted on GitHub, offering you a seamless and efficient experience in exploring Grails plugins.</p>
 <p><img src="/blog/2023-09-11-new-grails-plugin-portal.png" alt="Grails Plugin Portal!" /></p>
 <h2>A Glimpse of the Future: Grails Plugin Portal Redesigned</h2>
-<p>Our dedicated team has been hard at work, and we're excited to unveil the Grails Plugin Portal 2.0, now hosted at <a href="https://github.com/grails/grails-static-website">https://github.com/grails/grails-static-website</a>. What's our aim? To make your Grails plugin journey smoother and more accessible than ever before!</p>
+<p>Our dedicated team has been hard at work, and we're excited to unveil the Grails Plugin Portal 2.0, now hosted at <a href="https://github.com/apache/grails-static-website">https://github.com/apache/grails-static-website</a>. What's our aim? To make your Grails plugin journey smoother and more accessible than ever before!</p>
 <h2>Key Features of the New Grails Plugin Portal</h2>
 <h3>Quick and Easy Search Functionality</h3>
 <p>We get it, time is precious when you're deep into Grails projects. That's why our new portal boasts a lightning-fast search feature. Type in your keywords, hit enter, and voilà! Your desired plugins are right there at your fingertips.</p>
@@ -1075,12 +1075,12 @@ grailsGradlePluginVersion=6.1.0
 </li>
 </ol>
 <h2>All Plugins in One Place</h2>
-<p>Did you know that all the plugins on the Grails Plugin Portal are sourced from <a href="https://github.com/grails/grails-plugins-metadata/tree/grails-plugins.json">https://github.com/grails/grails-plugins-metadata/tree/grails-plugins.json</a>? We've streamlined the process to ensure you have access to the most up-to-date plugins directly from the source.</p>
+<p>Did you know that all the plugins on the Grails Plugin Portal are sourced from <a href="https://github.com/apache/grails-plugins-metadata/tree/grails-plugins.json">https://github.com/apache/grails-plugins-metadata/tree/grails-plugins.json</a>? We've streamlined the process to ensure you have access to the most up-to-date plugins directly from the source.</p>
 <h2>How to Include or Update Your Grails Plugin</h2>
 <p>Excited to get your Grails plugin into the spotlight on our portal? Here's how you can include or update your Grails plugin:</p>
 <ol>
 <li>
-<p><strong>Fork the Repository</strong>: Start by forking the <a href="https://github.com/grails/grails-plugins-metadata">Grails Plugin Metadata Repository</a>.</p>
+<p><strong>Fork the Repository</strong>: Start by forking the <a href="https://github.com/apache/grails-plugins-metadata">Grails Plugin Metadata Repository</a>.</p>
 </li>
 <li>
 <p><strong>Edit the JSON File</strong>: Navigate to the <code>grails-plugins.json</code> file in your forked repository. This file contains the plugin metadata.</p>
@@ -1089,11 +1089,11 @@ grailsGradlePluginVersion=6.1.0
 <p><strong>Add Your Plugin</strong>: To include your plugin, simply add its metadata to the JSON file. Make sure to follow the established format.</p>
 </li>
 <li>
-<p><strong>Submit a Pull Request</strong>: Once you've added or updated your plugin details, submit a pull request to the original <a href="https://github.com/grails/grails-plugins-metadata">Grails Plugin Metadata Repository</a>. Our team will review it and, upon approval, your plugin will be part of the portal!</p>
+<p><strong>Submit a Pull Request</strong>: Once you've added or updated your plugin details, submit a pull request to the original <a href="https://github.com/apache/grails-plugins-metadata">Grails Plugin Metadata Repository</a>. Our team will review it and, upon approval, your plugin will be part of the portal!</p>
 </li>
 </ol>
 <h2>Get Involved and Contribute</h2>
-<p>But here's the exciting part: the Grails Plugin Portal is not just a resource; it's a community effort! We're eager to hear your thoughts and welcome your contributions. Have a Grails plugin you'd like to share, or ideas for portal enhancements? Join us on <a href="https://github.com/grails/grails-static-website">GitHub</a>, and together, we'll make Grails development a breeze!</p>
+<p>But here's the exciting part: the Grails Plugin Portal is not just a resource; it's a community effort! We're eager to hear your thoughts and welcome your contributions. Have a Grails plugin you'd like to share, or ideas for portal enhancements? Join us on <a href="https://github.com/apache/grails-static-website">GitHub</a>, and together, we'll make Grails development a breeze!</p>
 <h2>Embrace the Future of Grails Plugin Discovery</h2>
 <p>The new Grails Plugin Portal is your gateway to a brighter future in Grails development. With its static structure, lightning-fast search, and curated lists of top-rated and latest release plugins, it's your one-stop-shop for all things Grails. Come on in, explore, discover, and become an active part of the Grails community. Let's build amazing Grails applications together with this reimagined portal!</p>
 <p>Ready to get started? Visit the <a href="/plugins.html">Grails Plugin Portal</a> today!</p>]]></description><author>Puneet Behl</author><guid>2023-09-11-the-new-grails-plugin-portal</guid><pubDate>Mon, 11 Sep 2023 00:00:00 GMT</pubDate></item><item><title>Introducing Grails Spring Security Core Plugin 6.0.0 - Elevated Security, Grails 6 Compatibility, Enhanced Commands, and Effortless Documentation</title><link>https://grails.staged.apache.org/blog/2023-08-25-introducing-grails-spring-security-core-6.html</link><description><![CDATA[</p>
@@ -1184,7 +1184,7 @@ grailsGradlePluginVersion=6.1.0
 <h3>Option 2: Download &amp; Install Binary</h3>
 <ol>
 <li>
-<p>Download the latest binary from the following link, based on your Operating System: <a href="https://github.com/grails/grails-forge/releases">New Grails CLI Binary</a></p>
+<p>Download the latest binary from the following link, based on your Operating System: <a href="https://github.com/apache/grails-forge/releases">New Grails CLI Binary</a></p>
 </li>
 <li>
 <p>Extract the downloaded zip file to an appropriate directory on your system.</p>
@@ -1208,7 +1208,7 @@ grailsGradlePluginVersion=6.1.0
 <ol>
 <li>Clone the repository with the following command:</li>
 </ol>
-<pre><code class="language-shell">git clone https://github.com/grails/grails-forge.git
+<pre><code class="language-shell">git clone https://github.com/apache/grails-forge.git
 </code></pre>
 <ol start="2">
 <li>Build the distribution using the following command:</li>
@@ -1228,7 +1228,7 @@ grailsGradlePluginVersion=6.1.0
 sdk use grails dev
 </code></pre>
 <h2>Explore the Source Code</h2>
-<p>Curious about the inner workings of the New Grails Forge? Delve into the source code on GitHub: <a href="https://github.com/grails/grails-forge">Grails Forge Core Source Code</a></p>
+<p>Curious about the inner workings of the New Grails Forge? Delve into the source code on GitHub: <a href="https://github.com/apache/grails-forge">Grails Forge Core Source Code</a></p>
 <h2>Preview Feature: Explore Your Grails Application Source Files</h2>
 <p>We are excited to introduce the Preview Feature on <a href="https://start.grails.org">https://start.grails.org</a>! This powerful addition allows you to take a sneak peek into your Grails application source files before actually generating the project. With the Preview Feature, you can explore the selected options and features to see exactly what will be generated, giving you full control and confidence in your project setup.</p>
 <p>How does it work? It's simple:</p>
@@ -1314,11 +1314,11 @@ sdk use grails dev
 <p>To download and get started with Grails 6, visit the official Grails documentation: <a href="https://docs.grails.org/latest/guide/gettingStarted.html#downloadingAndInstalling">docs.grails.org/latest/guide/gettingStarted.html#downloadingAndInstalling</a>.</p>
 <p><strong>Happy Coding with Grails 6!</strong></p>]]></description><author>Puneet Behl</author><guid>2023-07-25-introducing-grails-6</guid><pubDate>Tue, 25 Jul 2023 00:00:00 GMT</pubDate></item><item><title>Grails 6 RC1 - Release Announcement</title><link>https://grails.staged.apache.org/blog/2023-05-27-grails-6-rc1.html</link><description><![CDATA[</p>
 <p>The Grails Foundation is pleased to announce the release of Grails 6 RC1! We encourage you to update your applications to this release.</p>
-<p>The <a href="https://github.com/grails/grails-core/releases/tag/v6.0.0-RC1">Grails 6.0.0-RC1 Release</a> provides an easy upgrade path to the developers, or project managers who are looking to upgrade to Java 17, and Spring 6.</p>
+<p>The <a href="https://github.com/apache/grails-core/releases/tag/v6.0.0-RC1">Grails 6.0.0-RC1 Release</a> provides an easy upgrade path to the developers, or project managers who are looking to upgrade to Java 17, and Spring 6.</p>
 <h2>What’s New?</h2>
 <ul>
 <li>All major Grails libraries such as Grails Views, Grails GSP, Grails Testing Support, GORM core, GORM for Hibernate, MongoDB, and Neo4J are updated to Java 11 as baseline, Gradle 7.6.1.</li>
-<li>A brand new and superfast <a href="https://github.com/grails/grails-forge">Command Line Interface</a> to generate Grails 6 applications and plugins. This new CLI provides the ability to generate applications completely offline.</li>
+<li>A brand new and superfast <a href="https://github.com/apache/grails-forge">Command Line Interface</a> to generate Grails 6 applications and plugins. This new CLI provides the ability to generate applications completely offline.</li>
 </ul>
 <h2>Installation</h2>
 <h3>Installing with SDKMan</h3>
@@ -1327,7 +1327,7 @@ sdk use grails dev
 </code></pre>
 <h3>Download &amp; Install Binary</h3>
 <ul>
-<li>Download the latest binary from <a href="https://github.com/grails/grails-forge/releases/tag/v6.0.0-RC1">here</a> based on your Operating System</li>
+<li>Download the latest binary from <a href="https://github.com/apache/grails-forge/releases/tag/v6.0.0-RC1">here</a> based on your Operating System</li>
 <li>Extract to appropriate directory.</li>
 <li>Create environment variable GRAILS_HOME which points to installation directory, eg: c:/grails</li>
 <li>Update the PATH environment variable, append %GRAILS_HOME%\bin.</li>
@@ -1335,7 +1335,7 @@ sdk use grails dev
 <h3>Use SDKMan To Build &amp; Install From Source</h3>
 <ul>
 <li>Clone the repository as follows:</li>
-<li>git clone <a href="https://github.com/grails/grails-forge/tree/v6.0.0-RC1">github.com/grails/grails-forge/tree/v6.0.0-RC1</a></li>
+<li>git clone <a href="https://github.com/apache/grails-forge/tree/v6.0.0-RC1">github.com/apache/grails-forge/tree/v6.0.0-RC1</a></li>
 <li>Build dist using the command <code>./gradlew :grails-cli:assembleDist</code>.</li>
 <li>Copy &amp; Extract the archive from grails-forge/grails-cli/build/distributions/grails-cli.*.zip to the user home or any other directory of your preference.</li>
 <li>Use <a href="https://sdkman.io/">SDKMan</a>, to install the dev version and use the path to the extracted directory. For example, the following command install the “dev” version and assumes you’ve extracted to the user’s home directory:</li>
@@ -1346,10 +1346,10 @@ sdk use grails dev
 <h3>Why is my Grails 6 RC1 application not working?</h3>
 <ul>
 <li>
-<p>Starting with the recent release of Grails 6, the CLI has moved to a separate project <a href="https://github.com/grails/grails-forge">github.com/grails/grails-forge</a>. The CLI shipped with Grails Core is deprecated and will be removed in the near term.</p>
+<p>Starting with the recent release of Grails 6, the CLI has moved to a separate project <a href="https://github.com/apache/grails-forge">github.com/apache/grails-forge</a>. The CLI shipped with Grails Core is deprecated and will be removed in the near term.</p>
 </li>
 <li>
-<p>If you have used Grails binaries before, then you might be used to downloading it from the <a href="https://github.com/grails/grails-core/releases/v6.0.0-RC1">Grails Core release page</a>. However, this will no longer work and you should instead, download the OS specific native image from the <a href="https://github.com/grails/grails-forge/releases/v6.0.0-RC1">Grails Forge 6.0.0-RC1 Release Page</a>.</p>
+<p>If you have used Grails binaries before, then you might be used to downloading it from the <a href="https://github.com/apache/grails-core/releases/v6.0.0-RC1">Grails Core release page</a>. However, this will no longer work and you should instead, download the OS specific native image from the <a href="https://github.com/apache/grails-forge/releases/v6.0.0-RC1">Grails Forge 6.0.0-RC1 Release Page</a>.</p>
 </li>
 </ul>
 <h3>Why do some Grails commands don't work?</h3>
@@ -1367,7 +1367,7 @@ sdk use grails dev
 <li>We will be adding more features such as Security.</li>
 <li>The Grails Scaffolding Plugin will be updated to work with Grails 6.</li>
 </ul>]]></description><author>Puneet Behl</author><guid>2023-05-27-grails-6-rc1</guid><pubDate>Sat, 27 May 2023 00:00:00 GMT</pubDate></item><item><title>Grails 6 M2 - Release Annoucement</title><link>https://grails.staged.apache.org/blog/2023-03-29-grails-6-m2.html</link><description><![CDATA[</p>
-<p>The Grails Foundation is excited for the release of Grails framework 6 M2! We encourage you to try this release and provide your feedback <a href="https://github.com/grails/grails-core/issues">here</a>.</p>
+<p>The Grails Foundation is excited for the release of Grails framework 6 M2! We encourage you to try this release and provide your feedback <a href="https://github.com/apache/grails-core/issues">here</a>.</p>
 <h2>What are some changes to expect?</h2>
 <ul>
 <li>Leveling up the Grails CLI</li>
@@ -1394,7 +1394,7 @@ sdk use grails dev
 </code></pre>
 <h3>Download &amp; Install Binary</h3>
 <ul>
-<li>Download the latest binary from <a href="https://github.com/grails/grails-forge/releases/tag/v6.0.0-M2">here</a> based on your Operating System</li>
+<li>Download the latest binary from <a href="https://github.com/apache/grails-forge/releases/tag/v6.0.0-M2">here</a> based on your Operating System</li>
 <li>Extract to appropriate directory</li>
 <li>Create environment variable GRAILS_HOME which points to installation directory, eg: c:/grails</li>
 <li>Update the PATH environment variable, append %GRAILS_HOME%\bin</li>
@@ -1403,7 +1403,7 @@ sdk use grails dev
 <ul>
 <li>Clone the repository as follows:</li>
 </ul>
-<pre><code>git clone https://github.com/grails/grails-forge.git
+<pre><code>git clone https://github.com/apache/grails-forge.git
 </code></pre>
 <ul>
 <li>Build dist using the command <code>./gradlew :grails-cli:assembleDist</code></li>
@@ -1430,7 +1430,7 @@ sdk use grails dev
 <ul>
 <li>With the future release of Grails 7, we are planning a move to Java 17 as a baseline, so Grails 6 provides an easy upgrade path to users or applications who are planning to move to Java 17.</li>
 <li>We will be ending the support for Grails 4 by the end of this quarter, and Grails 5 by the end of 2023. We strongly recommend updating applications to upgrade to Grails 6.</li>
-<li>Additionally with this realease, we have updated a bunch of underlying dependencies. Some of those updates include: Spring 5.3.26, Spring Boot 2.7.9, Tomcat 9.0.73, and Hibernate 5.6.15.Final. Check the Grails Core <a href="https://github.com/grails/grails-core/releases/v6.0.0-M2/">GitHub release notes</a> page for more information.</li>
+<li>Additionally with this realease, we have updated a bunch of underlying dependencies. Some of those updates include: Spring 5.3.26, Spring Boot 2.7.9, Tomcat 9.0.73, and Hibernate 5.6.15.Final. Check the Grails Core <a href="https://github.com/apache/grails-core/releases/v6.0.0-M2/">GitHub release notes</a> page for more information.</li>
 </ul>
 <h2>Grails 6 Release Schedule</h2>
 <ul>
@@ -1469,7 +1469,7 @@ Moving the Grails Foundation under Unity provides a meaningful alliance between 
 <p>The Grails Artifactory Instance at <a href="https://repo.grails.org">repo.grails.org</a> will be down for scheduled maintenance on Sunday February 12th, 2023 as JFrog migrates it to newer infrastructure.</p>
 <p>The outage will begin at <strong>08:00 UTC</strong> and is expected to last 3 hours. The repository should be available again at <strong>11:00 UTC</strong></p>
 <p>During this time, projects that retrieve their dependencies from repo.grails.org may experience issues.</p>
-<p>For more information, or to discuss issues encountered after this window, please see this <a href="https://github.com/grails/grails-core/issues/12863">GitHub issue</a>.</p>]]></description><author>Jason Schindler</author><guid>2023-02-08-repository-maint</guid><pubDate>Wed, 08 Feb 2023 00:00:00 GMT</pubDate></item><item><title>Grails Spring Security Core Plugin Improper Privilege Management Vulnerability</title><link>https://grails.staged.apache.org/blog/2022-11-22-ss-plugin-auth-cve.html</link><description><![CDATA[</p>
+<p>For more information, or to discuss issues encountered after this window, please see this <a href="https://github.com/apache/grails-core/issues/12863">GitHub issue</a>.</p>]]></description><author>Jason Schindler</author><guid>2023-02-08-repository-maint</guid><pubDate>Wed, 08 Feb 2023 00:00:00 GMT</pubDate></item><item><title>Grails Spring Security Core Plugin Improper Privilege Management Vulnerability</title><link>https://grails.staged.apache.org/blog/2022-11-22-ss-plugin-auth-cve.html</link><description><![CDATA[</p>
 <p><strong>Information regarding CVE-2022-41923</strong></p>
 <h2>Overview</h2>
 <p>The Grails team has confirmed a security vulnerability found in the Grails Spring Security Core plugin, initially identified by Adrien Peter and Benjamin Sepe from <a href="https://www.synacktiv.com/">Synacktiv</a>, and investigated and reported by Arek Bazylewicz of <a href="https://id5.io">ID5</a>. This vulnerability has been assigned identifier <a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-41923">CVE-2022-41923</a>.</p>
@@ -1488,15 +1488,15 @@ Moving the Grails Foundation under Unity provides a meaningful alliance between 
 <h2>Protecting Your Applications</h2>
 <p>The following Grails Spring Security Core plugin versions have been patched for this vulnerability:</p>
 <ul>
-<li><a href="https://github.com/grails/grails-spring-security-core/releases/tag/v3.3.2">3.3.2</a></li>
-<li><a href="https://github.com/grails/grails-spring-security-core/releases/tag/v4.0.5">4.0.5</a></li>
-<li><a href="https://github.com/grails/grails-spring-security-core/releases/tag/v5.1.1">5.1.1</a></li>
+<li><a href="https://github.com/apache/grails-spring-securityreleases/tag/v3.3.2">3.3.2</a></li>
+<li><a href="https://github.com/apache/grails-spring-securityreleases/tag/v4.0.5">4.0.5</a></li>
+<li><a href="https://github.com/apache/grails-spring-securityreleases/tag/v5.1.1">5.1.1</a></li>
 </ul>
 <p>The best way to protect your Grails framework application is to upgrade to a patched release of this plugin.</p>
 <p>If you are unable to upgrade to a patched version of the plugin, you can work around the issue with a small code and configuration change described in <a href="https://github.com/grails/GSSC-CVE-2022-41923">this GitHub repository</a>.  We have provided workaround examples for Grails framework 2 through 5 applications. A demonstration of the vulnerability will be provided in time, after users have an opportunity to patch their applications.</p>
 <h2>Looking Forward</h2>
 <p>The Grails Foundation and the Grails development team take application security very seriously. We are continuing to research and monitor this vulnerability and will update this post with new information as it is discovered.</p>
-<p>If you have questions about this vulnerability or need assistance on upgrades or workarounds, please see the <a href="https://github.com/grails/grails-spring-security-core/issues/844">discussion on GitHub</a> or contact us at <a href="mailto:security@grails.org">security@grails.org</a>.</p>]]></description><author>Matthew Moss</author><guid>2022-11-22-ss-plugin-auth-cve</guid><pubDate>Tue, 22 Nov 2022 00:00:00 GMT</pubDate></item><item><title>Grails Data Binding to Static Properties Bug</title><link>https://grails.staged.apache.org/blog/2022-09-28-static-binding-bug.html</link><description><![CDATA[</p>
+<p>If you have questions about this vulnerability or need assistance on upgrades or workarounds, please see the <a href="https://github.com/apache/grails-spring-securityissues/844">discussion on GitHub</a> or contact us at <a href="mailto:security@grails.org">security@grails.org</a>.</p>]]></description><author>Matthew Moss</author><guid>2022-11-22-ss-plugin-auth-cve</guid><pubDate>Tue, 22 Nov 2022 00:00:00 GMT</pubDate></item><item><title>Grails Data Binding to Static Properties Bug</title><link>https://grails.staged.apache.org/blog/2022-09-28-static-binding-bug.html</link><description><![CDATA[</p>
 <p><strong>Information about an issue in the Grails data binding logic that can cause modification of static properties</strong></p>
 <h2>Summary</h2>
 <p>The Grails Team has confirmed a bug that was found in the Grails data binding logic, which incorrectly permits data binding to static properties under certain conditions. This bug was identified and reported by the Engineering Team at Transitional Data Services (<a href="https://tdsi.com">https://tdsi.com</a>).</p>
@@ -1531,7 +1531,7 @@ Moving the Grails Foundation under Unity provides a meaningful alliance between 
 </code></pre>
 <h2>Thank you!</h2>
 <p>We would like to thank the Engineering Team at Transitional Data Services for identifying this bug as well as the countless contributions from the folks in  our awesome community.  Without your dedication and enthusiasm, the Grails framework would not be where it is today.  Thank you!</p>
-<p>For more technical details about this bug and the patches, please see the <a href="https://github.com/grails/grails-core/issues/12718">discussion on GitHub</a>.</p>]]></description><author>Matthew Moss</author><guid>2022-09-28-static-binding-bug</guid><pubDate>Wed, 28 Sep 2022 00:00:00 GMT</pubDate></item><item><title>Grails Framework Remote Code Execution Vulnerability</title><link>https://grails.staged.apache.org/blog/2022-07-18-rce-vulnerability.html</link><description><![CDATA[</p>
+<p>For more technical details about this bug and the patches, please see the <a href="https://github.com/apache/grails-core/issues/12718">discussion on GitHub</a>.</p>]]></description><author>Matthew Moss</author><guid>2022-09-28-static-binding-bug</guid><pubDate>Wed, 28 Sep 2022 00:00:00 GMT</pubDate></item><item><title>Grails Framework Remote Code Execution Vulnerability</title><link>https://grails.staged.apache.org/blog/2022-07-18-rce-vulnerability.html</link><description><![CDATA[</p>
 <p><strong>Grails Framework information regarding CVE-2022-35912</strong></p>
 <h2>Updates</h2>
 <h3>July 20th, 2022</h3>
@@ -1591,7 +1591,7 @@ Moving the Grails Foundation under Unity provides a meaningful alliance between 
 <p>Because Grails applications are built on top of Spring and Spring Boot, the Grails team has taken this vulnerability very seriously. Our investigations have yielded no evidence that Grails 4.x or 5.x applications are vulnerable to this attack. The Grails framework has its own data-binding logic, which includes checks to validate that a given property a) is in a list of properties that may be bound to, and b) exists within the target metaClass. All other property candidates are ignored.</p>
 <p>The known exploit is one mechanism that can be used for this vulnerability. We will continue to monitor this situation and alert the Grails community of any vulnerabilities discovered, along with mitigation steps.</p>
 <h2>Next Steps</h2>
-<p>Although at this time, we have no reason to believe that Grails applications are vulnerable, as a precaution, we have released <a href="https://github.com/grails/grails-core/releases/tag/v5.1.6">Grails 5.1.6</a>.  This Grails Framework release updates our Spring dependency to 5.3.18, which includes the upstream patch from the Spring Framework Team.</p>]]></description><author>Jason Schindler</author><guid>2022-03-31-grails-spring-rce</guid><pubDate>Thu, 31 Mar 2022 00:00:00 GMT</pubDate></item><item><title>Grails Foundation Announces First Tools and Infrastructure Partner</title><link>https://grails.staged.apache.org/blog/2022-01-07-gradle-enterprise-tools-and-infrastructure-partner.html</link><description><![CDATA[</p>
+<p>Although at this time, we have no reason to believe that Grails applications are vulnerable, as a precaution, we have released <a href="https://github.com/apache/grails-core/releases/tag/v5.1.6">Grails 5.1.6</a>.  This Grails Framework release updates our Spring dependency to 5.3.18, which includes the upstream patch from the Spring Framework Team.</p>]]></description><author>Jason Schindler</author><guid>2022-03-31-grails-spring-rce</guid><pubDate>Thu, 31 Mar 2022 00:00:00 GMT</pubDate></item><item><title>Grails Foundation Announces First Tools and Infrastructure Partner</title><link>https://grails.staged.apache.org/blog/2022-01-07-gradle-enterprise-tools-and-infrastructure-partner.html</link><description><![CDATA[</p>
 <p><strong>Gradle has joined the Grails Foundation as our first Tools and Infrastructure Partner</strong></p>
 <p>The Grails Foundation™ is truly appreciative of the tremendous support we receive from our sponsors. In addition to financial support, generous contributions of development tools, infrastructure, and other resources are essential to the continued evolution of the Grails® framework. Thus, we have established a new partnership program to recognize the companies whose contributions enable us to maintain and expand both the open source technologies and the assets we rely on to keep our communities informed and engaged.</p>
 <p>Today, we are pleased to announce that Gradle Inc, the providers of <a href="https://gradle.org">Gradle Build Tool</a> and <a href="https://gradle.com">Gradle Enterprise</a>, has joined the Grails Foundation as our first <a href="https://grails.org/foundation/sponsor-list.html#infrastructure">Tools and Infrastructure Partner</a>! In support of our organizations' shared values and goals within the open source ecosystem, Gradle provides the Foundation free instances of <a href="https://gradle.com">Gradle Enterprise</a>.</p>
@@ -1606,8 +1606,8 @@ Moving the Grails Foundation under Unity provides a meaningful alliance between 
 <p>— Jen Wiese</p>
 <p><a href="https://objectcomputing.com/download_file/5451">Slides</a></p>
 <iframe width="100%" height="560" src="https://www.youtube-nocookie.com/embed/EE5flg8Hj_E" frameborder="0"></iframe>]]></description><author>Jen Wiese</author><guid>2022-01-07-2gm-town-hall-q1</guid><pubDate>Fri, 07 Jan 2022 00:00:00 GMT</pubDate></item><item><title>Grails Framework 5.1 Released</title><link>https://grails.staged.apache.org/blog/2021-12-15-grails-five-one.html</link><description><![CDATA[</p>
-<p>The Grails Foundation™ is pleased to announce a new minor release: <a href="https://github.com/grails/grails-core/releases/tag/v5.1.0"><strong>Grails framework 5.1</strong></a>!</p>
-<p>This release of the Grails framework includes a number of bug fixes and Gradle 7.2 compatibility changes (the Gradle task definitions with <a href="https://docs.gradle.org/7.0/userguide/upgrading_version_6.html#task_validation_problems_are_now_errors">incorrectly defined input output will now fail the build</a>), plus a bunch of dependencies updates. For more information, please check the <a href="https://github.com/grails/grails-core/releases/tag/v5.1.0"><strong>Grails 5.1 release notes</strong></a>.</p>
+<p>The Grails Foundation™ is pleased to announce a new minor release: <a href="https://github.com/apache/grails-core/releases/tag/v5.1.0"><strong>Grails framework 5.1</strong></a>!</p>
+<p>This release of the Grails framework includes a number of bug fixes and Gradle 7.2 compatibility changes (the Gradle task definitions with <a href="https://docs.gradle.org/7.0/userguide/upgrading_version_6.html#task_validation_problems_are_now_errors">incorrectly defined input output will now fail the build</a>), plus a bunch of dependencies updates. For more information, please check the <a href="https://github.com/apache/grails-core/releases/tag/v5.1.0"><strong>Grails 5.1 release notes</strong></a>.</p>
 <h2>Updated Dependencies</h2>
 <p>The dependencies that have been updated include:</p>
 <h3>Spring Boot 2.6.1</h3>
@@ -1745,7 +1745,7 @@ For releases &gt;=2.0-beta9 and &lt;=2.10.0, the mitigation is to remove the <co
 <h3>Default Autowire By Type in Data Services</h3>
 <p>In previous versions, the beans inside the Grails DataService were autowire by name, but this is changed to autowire by type in Grails framework 5. Use the Spring <code>@Qualifier</code> annotation to autowire by name. For details, see the Spring documentation for <a href="https://docs.spring.io/spring-framework/docs/5.3.10/reference/html/core.html#beans-autowired-annotation-qualifiers">Fine-tuning Annotation Based Autowiring with Qualifiers</a>.</p>
 <h3>Grails Gradle Plugin</h3>
-<p>The <a href="https://github.com/grails/grails-gradle-plugin">Grails Gradle Plugin</a> is moved out of grails-core and may follow separate versioning, so you should decouple the <code>grailsVersion</code> Gradle property from <code>grailsGradlePluginVersion</code> in existing applications.</p>
+<p>The <a href="https://github.com/apache/grails-gradle-plugin">Grails Gradle Plugin</a> is moved out of grails-core and may follow separate versioning, so you should decouple the <code>grailsVersion</code> Gradle property from <code>grailsGradlePluginVersion</code> in existing applications.</p>
 <h3>Grails Gradle Publish Plugin Removed</h3>
 <p>The Grails Gradle Publish plugin used the Bintray API to publish artifacts. However, after the JFrog shutdown of Bintray, this stopped working. We have removed this plugin from the new Grails Plugin applications.</p>
 <h2>Get Started with Grails Framework 5</h2>
@@ -1794,7 +1794,7 @@ framework 5. Also, most Grails framework 4 plugins should work just fine, unless
 <p><a href="https://objectcomputing.com/services/training/catalog/grails/grails-deep-dive">Learn more and enroll</a></p>]]></description><author>Jen Wiese</author><guid>2021-09-02-grails-deep-dive</guid><pubDate>Thu, 02 Sep 2021 00:00:00 GMT</pubDate></item><item><title>Groovy 4 Webinar Coming Soon</title><link>https://grails.staged.apache.org/blog/2021-08-25-groovy-4-webinar.html</link><description><![CDATA[</p>
 <p>Object Computing Groovy Project Lead, <a href="https://objectcomputing.com/products/2gm-team">Paul King</a>, presents a complimentary 60-minute webinar on September 16th in which he introduces the features and improvements you can expect in Apache Groovy 4.</p>
 <p><a href="https://us02web.zoom.us/webinar/register/2816299174731/WN_pGeF4yuSRHaiBNajcDkUcA">Register here</a> to join the webinar live or to receive an email notification when the recording is available on YouTube.</p>]]></description><author>Jen Wiese</author><guid>2021-08-25-groovy-4-webinar</guid><pubDate>Wed, 25 Aug 2021 00:00:00 GMT</pubDate></item><item><title>Grails 5.0.0 RC1 Released</title><link>https://grails.staged.apache.org/blog/2021-08-12-grails-5-rc1-release.html</link><description><![CDATA[</p>
-<p>The Grails® Foundation is pleased to announce the first release candidate of <a href="https://github.com/grails/grails-core/releases/tag/v5.0.0.RC1">Grails framework 5.0.0</a>! With this release, we are one step closer to the Grails framework's next GA release!</p>
+<p>The Grails® Foundation is pleased to announce the first release candidate of <a href="https://github.com/apache/grails-core/releases/tag/v5.0.0.RC1">Grails framework 5.0.0</a>! With this release, we are one step closer to the Grails framework's next GA release!</p>
 <h2>Overview</h2>
 <p>Grails framework 5 represents a significant upgrade, with the Framework now rebased on top of an updated minimum set of dependencies including:</p>
 <ul>
@@ -1821,7 +1821,7 @@ framework 5. Also, most Grails framework 4 plugins should work just fine, unless
 </ul>
 <h2>Download</h2>
 <p>The easiest way to get started is to use <a href="https://sdkman.io/">SDKMAN! (The Software Development Kit Manager)</a> to download Grails 5.0.0.RC1.
-Alternatively, you could download the Grails Binary directly from the <a href="https://github.com/grails/grails-core/releases/download/v5.0.0.RC1/grails-5.0.0.RC1.zip">Github Release</a> page.</p>
+Alternatively, you could download the Grails Binary directly from the <a href="https://github.com/apache/grails-core/releases/download/v5.0.0.RC1/grails-5.0.0.RC1.zip">Github Release</a> page.</p>
 <h2>Conclusion</h2>
 <p>Thanks to all those who contributed to this release. Please <a href="https://twitter.com/grailsframework">follow us on Twitter @grailsframework</a> for the most up-to-date information on the framework.</p>]]></description><author>Puneet Behl</author><guid>2021-08-12-grails-5-rc1-release</guid><pubDate>Wed, 11 Aug 2021 00:00:00 GMT</pubDate></item><item><title>Calling All 2GM Users: Share Your Productivity Tips</title><link>https://grails.staged.apache.org/blog/2021-07-20-call-for-productivity-tips.html</link><description><![CDATA[</p>
 <h2>We're all about sharing it back.</h2>
@@ -1856,7 +1856,7 @@ org.xml.sax.SAXParseException; lineNumber: 6; columnNumber: 3; The element type 
 </ul>
 <p>The default value is <code>https://repo.grails.org/grails/core</code>, and we do not expect that to change.</p>
 <h2>Wrapping Up</h2>
-<p>We apologize for any inconvenience you may have experienced by this recent change. We will post a more detailed post-mortem on these events in the next few days. Please continue to report <a href="https://github.com/grails/grails-core/issues">any issues</a> you encounter.</p>]]></description><author>Jason Schindler</author><guid>2021-06-10-grails-wrapper-update</guid><pubDate>Thu, 10 Jun 2021 00:00:00 GMT</pubDate></item><item><title>2GM Town Hall Meeting: 2021 Q2</title><link>https://grails.staged.apache.org/blog/2021-05-21-2gm-town-hall-q2.html</link><description><![CDATA[</p>
+<p>We apologize for any inconvenience you may have experienced by this recent change. We will post a more detailed post-mortem on these events in the next few days. Please continue to report <a href="https://github.com/apache/grails-core/issues">any issues</a> you encounter.</p>]]></description><author>Jason Schindler</author><guid>2021-06-10-grails-wrapper-update</guid><pubDate>Thu, 10 Jun 2021 00:00:00 GMT</pubDate></item><item><title>2GM Town Hall Meeting: 2021 Q2</title><link>https://grails.staged.apache.org/blog/2021-05-21-2gm-town-hall-q2.html</link><description><![CDATA[</p>
 <p>Tags: <a href="https://grails.staged.apache.org/blog/tag/webinar.html"><span class="hashtag">#webinar</span></a> <a href="https://grails.staged.apache.org/blog/tag/townhall.html"><span class="hashtag">#townhall</span></a></p>
 <p>A big thanks to everyone who joined us for our Q2 2GM Town Hall Meeting! For those of you who missed the live event, the recording is embedded below.</p>
 <p>At this quarter's meeting, we shared updates regarding the Grails and Micronaut roadmaps, discussed changes to the Micronaut Guides, talked about how to become a sponsor of the Grails and Micronaut Foundations, and encouraged qualified community members to apply to join the 2GM engineering team! You can find all of Object Computing's open positions <a href="https://jobs.lever.co/oci">here</a>.</p>
@@ -2168,7 +2168,7 @@ apply plugin: &quot;io.github.gradle-nexus.publish-plugin&quot;
 <p>To trigger a release, create a new release from the GitHub releases page. Here is a sample <a href="https://github.com/puneetbehl/myplugin">Grails Plugin</a> that's configured to publish to Maven Central.</p>
 <h2>Update Information on Grails Plugin Portal</h2>
 <p>The <a href="/plugins.html">Grails Plugin Portal</a> uses the <a href="https://raw.githubusercontent.com/grails/grails-plugins-metadata/main/grails-plugins.json">grails-plugins.json</a> metadata file to display plugin information.</p>
-<p>The metadata is hosted at <a href="https://github.com/grails/grails-plugins-metadata/blob/main/grails-plugins.json">https://github.com/grails/grails-plugins-metadata/blob/main/grails-plugins.json</a>. When you publish a new plugin or release an existing plugin, you must send a pull request to this file to update the information on the portal.</p>
+<p>The metadata is hosted at <a href="https://github.com/apache/grails-plugins-metadata/blob/main/grails-plugins.json">https://github.com/apache/grails-plugins-metadata/blob/main/grails-plugins.json</a>. When you publish a new plugin or release an existing plugin, you must send a pull request to this file to update the information on the portal.</p>
 <ol>
 <li>
 <p>When you release a new plugin, add the following information at the end of the JSON file:</p>
@@ -2408,7 +2408,7 @@ David has contributed to so many plugins over the years, he has lost count! Whic
 <p><a href="https://objectcomputing.com/files/6415/6694/2515/slide_deck_Groovy_3_and_Beyond_webinar.pdf">Slides</a></p>
 <iframe width="100%" height="560" src="https://www.youtube-nocookie.com/embed/FPA_3dXzH7A" frameborder="0"></iframe>]]></description><author>Paul King</author><guid>2019-08-27</guid><pubDate>Tue, 27 Aug 2019 00:00:00 GMT</pubDate></item><item><title>Grails® 4 GA Released</title><link>https://grails.staged.apache.org/blog/2019-07-11.html</link><description><![CDATA[</p>
 <p>Tags: <a href="https://grails.staged.apache.org/blog/tag/release.html"><span class="hashtag">#release</span></a></p>
-<p>After several release candidates and great feedback from the community, the <a href="https://objectcomputing.com/products/2gm-team" title="Grails Team">Grails<sup>®</sup> team</a> at Object Computing, Inc. (OCI) is pleased to announce the GA availability of <a href="https://github.com/grails/grails-core/releases/tag/v4.0.0">Grails 4</a>.</p>
+<p>After several release candidates and great feedback from the community, the <a href="https://objectcomputing.com/products/2gm-team" title="Grails Team">Grails<sup>®</sup> team</a> at Object Computing, Inc. (OCI) is pleased to announce the GA availability of <a href="https://github.com/apache/grails-core/releases/tag/v4.0.0">Grails 4</a>.</p>
 <p>Grails 4 represents a significant upgrade, with the framework now rebased on top of an updated minimum set of dependencies including:</p>
 <ul>
 <li>Spring 5.1</li>
@@ -2434,14 +2434,14 @@ David has contributed to so many plugins over the years, he has lost count! Whic
 <iframe width="100%" height="560" src="https://www.youtube-nocookie.com/embed/rixvYN-DCPk" frameborder="0"></iframe>]]></description><author>Paul King</author><guid>2019-06-18</guid><pubDate>Tue, 18 Jun 2019 00:00:00 GMT</pubDate></item><item><title>Possible Grails® MITM Vulnerability</title><link>https://grails.staged.apache.org/blog/2019-05-30.html</link><description><![CDATA[</p>
 <h2>Introduction</h2>
 <p>In the Grails<sup>®</sup> framework, we have been using Travis to automatically release new versions.</p>
-<p>Some time ago, a user <a href="https://github.com/grails/grails-core/issues/11250" title="Issue 11250">opened an issue</a> detailing a possible MITM (Man in the Middle) attack because we were using a non-secured repository as part of the build process.</p>
+<p>Some time ago, a user <a href="https://github.com/apache/grails-core/issues/11250" title="Issue 11250">opened an issue</a> detailing a possible MITM (Man in the Middle) attack because we were using a non-secured repository as part of the build process.</p>
 <h2>Our Analysis</h2>
 <p>The HTTP repository mentioned before was only used to resolve SDKMan notification service and not for any project dependencies. All project dependencies were resolved with HTTPS.</p>
 <p>We have conducted an audit of the latest versions of the Grails <code>3.1.x</code>, <code>3.2.x</code>, <code>3.3.x</code>, and <code>4.x</code> lines, and we have verified that their contents have not been manipulated.</p>
 <p>We undertook the same process as the Groovy team and diffed all jars and executable content. There were 6 differences in the generated byte code, which we isolated to an issue in the Groovy compiler, which was simply changing the <em>order</em> of the byte code output – not the byte code itself.</p>
 <p>In addition, we have released Grails <code>3.3.10</code>, which includes the applied patch, as well as a version of Groovy that also has the patch applied.</p>
 <h2>Assuring This Won't Happen Again</h2>
-<p>We have added a check that will make the build fail if any repository is not secure. You can get more information on this solution <a href="https://github.com/grails/grails-core/blob/master/build.gradle#L597" title="Learn more about this solution">here</a>.</p>
+<p>We have added a check that will make the build fail if any repository is not secure. You can get more information on this solution <a href="https://github.com/apache/grails-core/blob/master/build.gradle#L597" title="Learn more about this solution">here</a>.</p>
 <h2>Steps for Users</h2>
 <p>No action is necessary. The issue was specifically related to the build of the framework itself and not applications built with it. If there were an issue, it would have been introduced in the build of the Grails framework (not your Grails apps), and we have verified that Grails code itself was not compromised. Thus, users do not need to verify their own apps because they weren’t resolving dependencies over HTTP. However, in case of doubt, you can upgrade to Grails <code>3.3.10</code>, which includes the applied patch.</p>]]></description><author>Iván López</author><guid>2019-05-30</guid><pubDate>Thu, 30 May 2019 00:00:00 GMT</pubDate></item><item><title>Webinar: Single-Page Apps Simplified with the Grails® framework and Vue.js</title><link>https://grails.staged.apache.org/blog/2019-05-24.html</link><description><![CDATA[</p>
 <p>Tags: <a href="https://grails.staged.apache.org/blog/tag/webinar.html"><span class="hashtag">#webinar</span></a></p>
@@ -2478,7 +2478,7 @@ David has contributed to so many plugins over the years, he has lost count! Whic
 <p><a href="https://objectcomputing.com/files/9715/5371/5835/Slide_Deck_Introducing_Grails_4_Webinar.pdf">Slides</a></p>
 <iframe width="100%" height="560" src="https://www.youtube-nocookie.com/embed/EVA_pIrjVdo" frameborder="0"></iframe>]]></description><author>James Kleeh</author><guid>2019-03-27</guid><pubDate>Wed, 27 Mar 2019 00:00:00 GMT</pubDate></item><item><title>Grails® 4 Milestone 1 Released</title><link>https://grails.staged.apache.org/blog/2019-02-19.html</link><description><![CDATA[</p>
 <p>Tags: <a href="https://grails.staged.apache.org/blog/tag/release.html"><span class="hashtag">#release</span></a></p>
-<p>The <a href="https://objectcomputing.com/products/2gm-team" title="Grails Team">Grails<sup>®</sup> team</a> at <a href="https://objectcomputing.com/">Object Computing, Inc.</a> (OCI) is pleased to announce the availability of the <a href="https://github.com/grails/grails-core/releases/tag/v4.0.0.M1">first milestone of Grails 4</a>.</p>
+<p>The <a href="https://objectcomputing.com/products/2gm-team" title="Grails Team">Grails<sup>®</sup> team</a> at <a href="https://objectcomputing.com/">Object Computing, Inc.</a> (OCI) is pleased to announce the availability of the <a href="https://github.com/apache/grails-core/releases/tag/v4.0.0.M1">first milestone of Grails 4</a>.</p>
 <p>Grails 4 represents a significant upgrade with the framework now rebased on top of an updated minimum set of dependencies including:</p>
 <ul>
 <li>Spring 5.1</li>
@@ -3522,7 +3522,7 @@ manually cleanup in functional tests.</p>]]></description><author>Sergio Del Amo
 <p>GORM 6.1 includes some real breakthrough innovations, including <a href="https://gorm.grails.org/6.1.x/hibernate/manual/index.html#dataServices">Data Services</a> that allow you to define interfaces that are automatically implemented and work seamlessly with GORM's multi-tenancy features.</p>
 <p>Other highlights of Grails 3.3 include the new <a href="https://async.grails.org/latest/guide/index.html#events">EventBus</a> abstraction which integrates with existing reactive libraries such as RxJava. Events are also for the first time transaction aware so that consumers are only notified if the surrounding transaction is successful, which simplifies code greatly.</p>
 <p>Overall there is an abundance of new features and improvements that developers will be able to take advantage of, from the <a href="https://testing.grails.org/">new testing framework</a> to improvemments to <a href="https://views.grails.org/latest/">JSON Views</a>.</p>
-<p>All of these new features and more are covered in the <a href="https://docs.grails.org/3.3.x/guide/introduction.html#whatsNew">What's New guide</a>. Thanks to the Grails community who contributed greatly to making the release a success and we look forward <a href="https://github.com/grails/grails-core/issues">to your feedback</a>!</p>]]></description><author>Graeme Rocher</author><guid>2017-07-26</guid><pubDate>Wed, 26 Jul 2017 00:00:00 GMT</pubDate></item><item><title>Quickcast #7: Logging with Grails® 3</title><link>https://grails.staged.apache.org/blog/2017-07-12.html</link><description><![CDATA[</p>
+<p>All of these new features and more are covered in the <a href="https://docs.grails.org/3.3.x/guide/introduction.html#whatsNew">What's New guide</a>. Thanks to the Grails community who contributed greatly to making the release a success and we look forward <a href="https://github.com/apache/grails-core/issues">to your feedback</a>!</p>]]></description><author>Graeme Rocher</author><guid>2017-07-26</guid><pubDate>Wed, 26 Jul 2017 00:00:00 GMT</pubDate></item><item><title>Quickcast #7: Logging with Grails® 3</title><link>https://grails.staged.apache.org/blog/2017-07-12.html</link><description><![CDATA[</p>
 <p>Tags: <a href="https://grails.staged.apache.org/blog/tag/quickcast.html"><span class="hashtag">#quickcast</span></a></p>
 <p>In this 20-minute video, 2GM (Groovy, Grails<sup>®</sup> framework, and Micronaut) team member, <a href="https://objectcomputing.com/products/2gm-team#caballero">Sergio del Amo Caballero</a>, introduces several tips and tricks related to logging with a Grails 3 application.</p>
 <p>Sergio discusses changes to logger names in Grails 3.3 and things to bear in mind when logging in Grails artifacts and Groovy POGOs.</p>
@@ -3704,7 +3704,7 @@ class BookServiceIntegrationSpec extends Specification {
 <p>Why?</p>
 <p>Autowiring a service into a domain class can have a big performance impact.</p>
 <p>Imagine you query 1,000 records from a database, and those records are mapped into a GORM entities. Injecting a service into each of those 1,000 GORM entities will have a performance cost.</p>
-<p>Thus, <a href="https://github.com/grails/grails-core/releases/tag/v3.2.8">starting with Grails<sup>®</sup> 3.2.8</a> auto wiring of GORM entities is disabled when you create an app from scratch. In Grails 3.3.0 or above it is disabled by default.</p>
+<p>Thus, <a href="https://github.com/apache/grails-core/releases/tag/v3.2.8">starting with Grails<sup>®</sup> 3.2.8</a> auto wiring of GORM entities is disabled when you create an app from scratch. In Grails 3.3.0 or above it is disabled by default.</p>
 <p>Let me illustrate this with an example.</p>
 <p>The following code will not get the service <em>greetingService</em> injected into a domain class unless you enable auto wiring.</p>
 <pre><code class="language-groovy">package demo
@@ -3887,7 +3887,7 @@ info.app.name=metadata
 grails.env=production
 info.app.grailsVersion=3.2.5
 </code></pre>
-<p>This info primarily comes from <code>build.gradle</code> and <code>gradle.properties</code> (the curious can check out the source code in <a href="https://github.com/grails/grails-core/blob/6c85ec239aa8cc4a9f646bb345c70c327ddb2dbc/grails-gradle-plugin/src/main/groovy/org/grails/gradle/plugin/core/GrailsGradlePlugin.groovy#L179">grails-core</a>). This file will be part of your final application when you build your <code>.jar</code> or <code>.war</code> file.</p>
+<p>This info primarily comes from <code>build.gradle</code> and <code>gradle.properties</code> (the curious can check out the source code in <a href="https://github.com/apache/grails-core/blob/6c85ec239aa8cc4a9f646bb345c70c327ddb2dbc/grails-gradle-plugin/src/main/groovy/org/grails/gradle/plugin/core/GrailsGradlePlugin.groovy#L179">grails-core</a>). This file will be part of your final application when you build your <code>.jar</code> or <code>.war</code> file.</p>
 <p>In a <code>.gsp</code>, this information is available by using the meta tag like this: (see the <a href="https://gsp.grails.org/latest/guide/index.html#tags">tag</a> documentation).</p>
 <h2>Adding More Information to <code>grails.build.info</code></h2>
 <p>With the Gradle build system, it is possible to hook into the build process and execute our own code. In this case we want Gradle to complete writing <code>grails.build.info</code>, and then we want to add additional properties to the file.</p>
@@ -4670,7 +4670,7 @@ cache:
 <h2>Conclusion</h2>
 <p>Travis-CI is a great tool to build and deploy your Grails plugin; it will help you maintain your code when receiving pull requests from the community. Happy CI'ing!</p>]]></description><author>Søren Berg Glasius</author><guid>2016-10-03</guid><pubDate>Mon, 03 Oct 2016 00:00:00 GMT</pubDate></item><item><title>Grails® 3.2 and GORM 6.0 Released</title><link>https://grails.staged.apache.org/blog/2016-09-28.html</link><description><![CDATA[</p>
 <p>Tags: <a href="https://grails.staged.apache.org/blog/tag/release.html"><span class="hashtag">#release</span></a></p>
-<p>Today we are pleased to announce the GA releases of <a href="https://github.com/grails/grails-core/releases/tag/v3.2.0">Grails<sup>®</sup> 3.2</a> and <a href="https://gorm.grails.org/latest/">GORM 6.0</a>.</p>
+<p>Today we are pleased to announce the GA releases of <a href="https://github.com/apache/grails-core/releases/tag/v3.2.0">Grails<sup>®</sup> 3.2</a> and <a href="https://gorm.grails.org/latest/">GORM 6.0</a>.</p>
 <p>Each of these releases represents a significant step forward for the framework and marks the second major release since <a href="https://objectcomputing.com/">Object Computing, Inc.</a> (OCI) began sponsoring development.</p>
 <h2>GORM 6.0</h2>
 <p><a href="https://gorm.grails.org/6.0.x">GORM 6.0</a> continues our goal of making GORM a standalone technology that can be used outside of the Grails framework. By separating GORM from the Spring container, it is now easier to bootstrap and use GORM in a range of different scenarios, from usage in Grails apps to Spring Boot apps to within a unit test.</p>
@@ -5049,7 +5049,7 @@ Marcin Erdmann (His first stateside appearance at Gr8?) did an all day Ratpack s
 <p>I look forward to the next edition in 2017!</p>
 <p>— Ryan Vanderwerf and the rest of the OCI/Grails Team</p>]]></description><author>Ryan Vanderwerf</author><guid>2016-08-01</guid><pubDate>Mon, 01 Aug 2016 00:00:00 GMT</pubDate></item><item><title>Grails® 3.2 M2 and GORM 6.0 M2 Released</title><link>https://grails.staged.apache.org/blog/2016-07-22.html</link><description><![CDATA[</p>
 <p>Tags: <a href="https://grails.staged.apache.org/blog/tag/release.html"><span class="hashtag">#release</span></a></p>
-<p>Today the <a href="https://objectcomputing.com/products/2gm-team">Grails team</a> at <a href="https://objectcomputing.com/">Object Computing, Inc.</a> (OCI) is pleased to announce the release of <a href="https://github.com/grails/grails-core/releases/tag/v3.2.0.M2">Grails<sup>®</sup> 3.2 Milestone 2</a>, which includes <a href="https://gorm.grails.org/6.0.x">GORM 6 Milestone 2</a> - the biggest GORM release ever!</p>
+<p>Today the <a href="https://objectcomputing.com/products/2gm-team">Grails team</a> at <a href="https://objectcomputing.com/">Object Computing, Inc.</a> (OCI) is pleased to announce the release of <a href="https://github.com/apache/grails-core/releases/tag/v3.2.0.M2">Grails<sup>®</sup> 3.2 Milestone 2</a>, which includes <a href="https://gorm.grails.org/6.0.x">GORM 6 Milestone 2</a> - the biggest GORM release ever!</p>
 <p>The <a href="https://gorm.grails.org/6.0.x">new version of GORM</a> is really the theme of this release. There are so many great new features that we wrote a dedicated <a href="https://gorm.grails.org/6.0.x/whatsNew/manual/index.html">&quot;What's New&quot;</a> guide just for GORM (to go along with the new dedicated GORM documentation).</p>
 <p>Just to summarize the new features in GORM include:</p>
 <ul>
@@ -5068,7 +5068,7 @@ Marcin Erdmann (His first stateside appearance at Gr8?) did an all day Ratpack s
 <p>On the Grails side, Grails 3.2 ships with release candidates of the new AngularJS 1.0 scaffolding (Angular 2.0 support is coming) and JSON Views 1.1 plugins as well as numerous improvements to the profiles.</p>
 <p>Grails 3.2 has also been updated to the latest and greatest dependencies including Spring Boot 1.4 RC1 and Spring 4.3.</p>
 <p>Check out the <a href="https://docs.grails.org/3.2.x/guide/introduction.html#whatsNew">What's New in Grails 3.2 Guide</a> for information on all the updates.</p>
-<p>We're inching closer to an RC now so it is a great time to try your applications and <a href="https://github.com/grails/grails-core/issues">report issues</a>!</p>
+<p>We're inching closer to an RC now so it is a great time to try your applications and <a href="https://github.com/apache/grails-core/issues">report issues</a>!</p>
 <p>If you want to hear more come and see us at Gr8Conf US in Minneapolis USA, or G3 Summit in Fort Lauderdale USA!</p>]]></description><author>Graeme Rocher</author><guid>2016-07-22</guid><pubDate>Fri, 22 Jul 2016 00:00:00 GMT</pubDate></item><item><title>Grails® Angular Scaffolding</title><link>https://grails.staged.apache.org/blog/2016-07-06.html</link><description><![CDATA[</p>
 <p>Tags: <a href="https://grails.staged.apache.org/blog/tag/angular.html"><span class="hashtag">#angular</span></a></p>
 <p>Creating a single-page application (SPA) has never been easier than it is with the new <a href="https://github.com/grails-plugins/grails-angular-scaffolding">Grails<sup>®</sup> Angular Scaffolding Plugin</a>! This post will give you a short tutorial on how to use it.</p>
@@ -5682,7 +5682,7 @@ class SkillsTestController {
 <p>In this presentation, Jeff demonstrates capabilities that are currently in development with the intention of soliciting feedback from the Grails community. He also introduces features of Grails 3 and Groovy.</p>
 <iframe width="100%" height="560" src="https://www.youtube-nocookie.com/embed/wVpEsbzMj90" frameborder="0"></iframe>]]></description><author>Jeff Scott Brown</author><guid>2016-06-02</guid><pubDate>Thu, 02 Jun 2016 00:00:00 GMT</pubDate></item><item><title>Grails® 3.2 Milestone 1 Released</title><link>https://grails.staged.apache.org/blog/2016-05-31.html</link><description><![CDATA[</p>
 <p>Tags: <a href="https://grails.staged.apache.org/blog/tag/release.html"><span class="hashtag">#release</span></a></p>
-<p>Today, and just in time for <a href="https://gr8conf.eu/">GR8Conf EU</a> in Copenhagen, we are pleased to announce the <a href="https://github.com/grails/grails-core/releases/tag/v3.2.0.M1">first milestone of Grails<sup>®</sup> 3.2</a>, which includes the following new features.</p>
+<p>Today, and just in time for <a href="https://gr8conf.eu/">GR8Conf EU</a> in Copenhagen, we are pleased to announce the <a href="https://github.com/apache/grails-core/releases/tag/v3.2.0.M1">first milestone of Grails<sup>®</sup> 3.2</a>, which includes the following new features.</p>
 <h2>RxGORM</h2>
 <p>Grails 3.2 milestone 1 ships with GORM 6.0 milestone 1, which includes a new implementation of GORM based on RxJava called RxGORM. With RxGORM you can build non-blocking, reactive applications using a familiar GORM API including features such as Where Queries, Dynamic Finders and Criteria Queries.</p>
 <p>With the initial release, support for MongoDB is included, but more implementations are planned for SQL, REST client, and other implementations. See the <a href="https://gorm.grails.org/latest/rx/manual/index.html">RxGORM Documentation</a> for more information.</p>
