@@ -14,7 +14,7 @@ questions:
   -
     slug: 'question_training'
     title: 'Do you offer Grails training?'
-    answer: '[OCI](https://objectcomputing.com) offers [Grails and GORM courses](https://objectcomputing.com/training/catalog/grails/) developed and delivered by Grails co-founders and the core engineering team.'
+    answer: 'The Apache Software Foundation does not offer Grails Training.  See [Commercial Support Options](/support.html).'
   -
     slug: 'question_usage'
     title: 'Where can I ask questions about usage?'
