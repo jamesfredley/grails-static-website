@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Foundation | Grails Framework</title><link>https://grails.apache.org</link><description>A powerful Groovy-based web application framework for the JVM built on top of Spring Boot</description><pubDate>Mon, 09 Jun 2025 14:04:00 GMT</pubDate><item><title>Technology Advisory Board Meeting</title><link>https://grails.apache.org/foundation/minutes/20221128-tab.html</link><description><![CDATA[</h2>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Foundation | Grails Framework</title><link>https://grails.apache.org</link><description>A powerful Groovy-based web application framework for the JVM built on top of Spring Boot</description><pubDate>Mon, 09 Jun 2025 14:51:10 GMT</pubDate><item><title>Technology Advisory Board Meeting</title><link>https://grails.apache.org/foundation/minutes/20221128-tab.html</link><description><![CDATA[</h2>
 <h3>Meeting Attendance:</h3>
 <ul>
 <li><strong>Puneet Behl</strong> - Grails Product Development Lead at Object Computing</li>
@@ -43,7 +43,7 @@
 </li>
 <li>New Support Options
 <ul>
-<li>https://grails.org/support.html</li>
+<li>/support.html</li>
 <li>Ad-Hoc Support</li>
 <li>Subscription-based Support</li>
 <li>Premium Product Support</li>
@@ -301,7 +301,7 @@
 </ul>
 </li>
 <li>
-<p><a href="https://grails.org/foundation/sponsorship.html#corporate">Corporate Sponsorships</a></p>
+<p>Corporate Sponsorships</p>
 <ul>
 <li>OCI</li>
 <li>Anonymous Donor</li>
@@ -309,7 +309,7 @@
 </ul>
 </li>
 <li>
-<p><a href="https://grails.org/foundation/sponsorship.html#community">Community Sponsorships</a></p>
+<p>Community Sponsorships</p>
 <ul>
 <li>Ongoing</li>
 </ul>
@@ -468,7 +468,7 @@
 <ul>
 <li>Improved configuration integration between Grails and Micronaut
 <ul>
-<li>https://github.com/grails/grails-core/issues/12082</li>
+<li>https://github.com/apache/grails-core/issues/12082</li>
 </ul>
 </li>
 <li>Investigate the use of Micronaut server runtimes</li>
@@ -506,8 +506,8 @@
 <ul>
 <li>As a not-for-profit organization, the Grails Foundation relies on the financial support from our amazing community of generous sponsors.
 <ul>
-<li><a href="https://grails.org/foundation/sponsorship.html#corporate">Corporate Sponsorships</a></li>
-<li><a href="https://grails.org/foundation/sponsorship.html#community">Community Sponsorships</a></li>
+<li>Corporate Sponsorships</li>
+<li>Community Sponsorships</li>
 </ul>
 </li>
 <li>Review current sponsors</li>
@@ -542,7 +542,7 @@
 </ul>
 <h3>Welcome (JSB)</h3>
 <ul>
-<li>Feel free to send in topics to discuss prior to meeting at techadvisory@grails.org</li>
+<li>Feel free to send in topics to discuss prior to meeting at dev@grails.apache.org</li>
 <li>All input and ideas are welcome</li>
 <li>We want to capitalize on the group of folks we have here, so please reach out</li>
 </ul>
