@@ -495,3 +495,6 @@ releases:
   -
     version: 7.0.0-M3
     publicationDate: Mar 05, 2025
+  -
+    version: 7.0.0-M4
+    publicationDate: Jun 10, 2025
