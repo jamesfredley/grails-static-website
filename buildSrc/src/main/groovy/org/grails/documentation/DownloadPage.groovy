@@ -37,9 +37,10 @@ class DownloadPage {
     static String renderDownload(String version) {
         StringWriter writer = new StringWriter()
         MarkupBuilder html = new MarkupBuilder(writer)
-        html.div(class: "guidegroup") {
+        boolean isSnapshot = version.endsWith('-SNAPSHOT') || version.contains('snapshot')
+        if (!isSnapshot) {
+            html.div(class: "guidegroup") {
             if (version) {
-                boolean isSnapshot = version.endsWith('-SNAPSHOT') || version.contains('snapshot')
                 div(class: "guidegroupheader") {
                     img(src: "[%url]/images/download.svg", alt: "Download Grails (${version})")
                     h2 "${isSnapshot ? 'Snapshot' : (version.contains('-M') ? 'Milestone' : (version.contains('-RC') ? 'Release Candidate': 'Latest Stable'))} Version (${version}) Downloads"
@@ -63,16 +64,14 @@ class DownloadPage {
                         }
                     } else {
                         li {
-                            a(href: "https://github.com/apache/grails-forge/releases/download/v${version}/apache-grails-${version}-incubating-bin.zip", 'Binary')
+                            a(href: "https://github.com/apache/grails-forge/releases/download/v${version}/grails-cli-${version}.zip", 'Binary')
                         }
                     }
-                    if (!isSnapshot) {
-                        li {
-                            a(href: "https://github.com/apache/grails-core/releases/tag/v${version}", 'Release Notes')
-                        }
+                    li {
+                        a(href: "https://github.com/apache/grails-core/releases/tag/v${version}", 'Release Notes')
                     }
-
                 }
+            }
             }
         }
         writer.toString()
@@ -101,6 +100,7 @@ class DownloadPage {
                     mkp.yieldUnescaped " the integrity of downloaded files by generating your own checksums and match them against ours, and checking signatures using the "
                     a(href: 'https://downloads.apache.org/grails/KEYS', 'KEYS')
                     mkp.yieldUnescaped " file which contains the Grails OpenPGP release keys."
+                    p ''
                     if (preRelease > latest) {
                         mkp.yieldUnescaped(renderDownload(preRelease.versionText))
                     }
@@ -129,6 +129,11 @@ class DownloadPage {
 
 
                     h3(class: 'columnheader', style: 'margin-bottom: 10px;', 'Installing with SDKMAN!')
+
+                    p {
+                        a(href: 'https://sdkman.io/', 'SDKMAN! (The Software Development Kit Manager)')
+                    }
+
                     p 'This tool makes installing the Grails framework on any Unix based platform (Mac OSX, Linux, Cygwin, Solaris, or FreeBSD) easy.'
                     p 'Simply open a new terminal and enter:'
                     div(class:'code', '$ curl -s https://get.sdkman.io | bash')
