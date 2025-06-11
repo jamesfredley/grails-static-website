@@ -124,10 +124,9 @@ class DownloadPage {
 
                     h3(class: 'columnheader', style: 'margin-bottom: 10px;', 'Other ways to get Grails')
 
-                    mkp.yieldUnescaped'Select a profile and set of features tailored to your needs with our application initializer, Grails Application Forge'
-                    li {
-                        a(href: 'https://start.grails.org', 'Grails Application Forge')
-                    }
+                    mkp.yieldUnescaped'Select a profile and set of features tailored to your needs with our application initializer:'
+                    a(href: 'https://start.grails.org', 'Grails Application Forge')
+
 
                     h3(class: 'columnheader', style: 'margin-bottom: 10px;', 'Installing with SDKMAN!')
                     p 'This tool makes installing the Grails framework on any Unix based platform (Mac OSX, Linux, Cygwin, Solaris, or FreeBSD) easy.'
