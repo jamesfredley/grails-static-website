@@ -1,3 +1,21 @@
+/*
+ *  Licensed to the Apache Software Foundation (ASF) under one
+ *  or more contributor license agreements.  See the NOTICE file
+ *  distributed with this work for additional information
+ *  regarding copyright ownership.  The ASF licenses this file
+ *  to you under the Apache License, Version 2.0 (the
+ *  "License"); you may not use this file except in compliance
+ *  with the License.  You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing,
+ *  software distributed under the License is distributed on an
+ *  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ *  KIND, either express or implied.  See the License for the
+ *  specific language governing permissions and limitations
+ *  under the License.
+ */
 package org.grails.gradle
 
 import groovy.transform.CompileStatic
@@ -12,6 +30,7 @@ class GrailsWebsitePlugin implements Plugin<Project> {
 
     public static final String EXTENSION_NAME = "grails"
     public static final String TASK_GEN_DOCS = "genDocs"
+    public static final String TASK_GEN_DOWNLOADS = "genDownloads"
     public static final String TASK_GEN_PROFILES = "genProfiles"
     public static final String TASK_GEN_GUIDES = "genGuides"
     public static final String TASK_GEN_FAQ = "genFaq"
@@ -50,6 +69,17 @@ class GrailsWebsitePlugin implements Plugin<Project> {
                 task.setProperty("url", siteExtension.url)
             }
             task.setDescription('Generates documentation HTML page - build/temp/documentation.html')
+            task.setGroup(GROUP_GRAILS)
+        })
+        project.tasks.register(TASK_GEN_DOWNLOADS, DownloadTask, { task ->
+            Object extension = project.getExtensions().findByName(EXTENSION_NAME)
+            if (extension instanceof SiteExtension) {
+                SiteExtension siteExtension = ((SiteExtension) extension)
+                task.setProperty("releases", siteExtension.releases)
+                task.setProperty("output", siteExtension.output)
+                task.setProperty("url", siteExtension.url)
+            }
+            task.setDescription('Generates download HTML page - build/temp/download.html')
             task.setGroup(GROUP_GRAILS)
         })
 
@@ -174,6 +204,7 @@ class GrailsWebsitePlugin implements Plugin<Project> {
             task.setGroup(GROUP_GRAILS)
             task.dependsOn(TASK_COPY_ASSETS)
             task.dependsOn(TASK_GEN_DOCS)
+            task.dependsOn(TASK_GEN_DOWNLOADS)
             task.dependsOn(TASK_GEN_PROFILES)
             task.dependsOn(TASK_GEN_FAQ)
             task.finalizedBy(TASK_RENDER_BLOG)
