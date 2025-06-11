@@ -98,7 +98,7 @@ class DownloadPage {
                     mkp.yieldUnescaped "We provide OpenPGP signatures ('.asc') files and checksums ('.sha256') for every release artifact. We recommend that you "
                     a(href: 'https://www.apache.org/info/verification.html', 'verify')
                     mkp.yieldUnescaped " the integrity of downloaded files by generating your own checksums and match them against ours, and checking signatures using the "
-                    a(href: 'https://downloads.apache.org/grails/KEYS', 'KEYS')
+                    a(href: 'https://www.apache.org/dyn/closer.lua/grails/KEYS?action=download', 'KEYS')
                     mkp.yieldUnescaped " file which contains the Grails OpenPGP release keys."
                     p ''
                     if (preRelease > latest) {
