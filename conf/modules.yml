@@ -58,12 +58,12 @@ modules:
     categoryImage: '[%url]/images/security.svg'
     category: Security
     title: Spring Security Core
-    url: https://apache.github.io/grails-spring-security/7.0.0-M3/core-plugin/guide/
+    url: https://apache.github.io/grails-spring-security/7.0.x/core-plugin/guide/
   springsecurityrest:
     categoryImage: '[%url]/images/security.svg'
     category: Security
     title: Spring Security REST
-    url: https://apache.github.io/grails-spring-security/7.0.0-M3/rest-plugin/guide/
+    url: https://apache.github.io/grails-spring-security/7.0.x/rest-plugin/guide/
   springsecurityappinfo:
     categoryImage: '[%url]/images/security.svg'
     category: Security
@@ -73,27 +73,27 @@ modules:
     categoryImage: '[%url]/images/security.svg'
     category: Security
     title: Spring Security - UI
-    url: https://apache.github.io/grails-spring-security/7.0.0-M3/ui-plugin/guide/
+    url: https://apache.github.io/grails-spring-security/7.0.x/ui-plugin/guide/
   springsecurityacl:
     categoryImage: '[%url]/images/security.svg'
     category: Security
     title: Spring Security - ACL
-    url: https://apache.github.io/grails-spring-security/7.0.0-M3/acl-plugin/guide/
+    url: https://apache.github.io/grails-spring-security/7.0.x/acl-plugin/guide/
   springsecurityldap:
     categoryImage: '[%url]/images/security.svg'
     category: Security
     title: Spring Security - LDAP
-    url: https://apache.github.io/grails-spring-security/7.0.0-M3/ldap-plugin/guide/
+    url: https://apache.github.io/grails-spring-security/7.0.x/ldap-plugin/guide/
   springsecuritycas:
     categoryImage: '[%url]/images/security.svg'
     category: Security
     title: Spring Security - CAS
-    url: https://apache.github.io/grails-spring-security/7.0.0-M3/cas-plugin/guide/
+    url: https://apache.github.io/grails-spring-security/7.0.x/cas-plugin/guide/
   springsecurityoauth2:
     categoryImage: '[%url]/images/security.svg'
     category: Security
     title: Spring Security - Oauth2
-    url: https://apache.github.io/grails-spring-security/7.0.0-M3/oauth2-plugin/guide/
+    url: https://apache.github.io/grails-spring-security/7.0.x/oauth2-plugin/guide/
   springsecuritykerberos:
     categoryImage: '[%url]/images/security.svg'
     category: Security
