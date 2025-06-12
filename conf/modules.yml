@@ -7,34 +7,34 @@ modules:
     categoryDescription: Upgrade guides for the latest version of Grails
   async:
     title: Async Grails
-    url: https://async.grails.org/latest/guide/index.html
+    url: https://docs.grails.org/latest/guide/async.html
     category: Async
     categoryImage: '[%url]/images/async.svg'
   testing:
     title: Testing Framework
-    url: https://testing.grails.org/latest/guide/index.html
+    url: https://docs.grails.org/latest/guide/testing.html
     categoryImage: '[%url]/images/testing.svg'
     category: Testing
   gormhibernate:
-    categoryUrl: https://gorm.grails.org
+    categoryUrl: https://docs.grails.org/latest/grails-data/
     categoryImage: '[%url]/images/gorm.svg'
     category: GORM - Data Access Toolkit
     title: GORM Hibernate
-    url: https://gorm.grails.org/latest/hibernate/manual/index.html
+    url: https://docs.grails.org/latest/grails-data/hibernate5/manual/
   gormmongodb:
-    categoryUrl: https://gorm.grails.org
+    categoryUrl: https://docs.grails.org/latest/grails-data/
     categoryImage: '[%url]/images/gorm.svg'
     category: GORM - Data Access Toolkit
     title: GORM MongoDb
-    url: https://gorm.grails.org/latest/mongodb/manual/index.html
+    url: https://docs.grails.org/latest/grails-data/mongodb/manual/
   gormneo4j:
-    categoryUrl: https://gorm.grails.org
+    categoryUrl: https://docs.grails.org/latest/grails-data/
     categoryImage: '[%url]/images/gorm.svg'
     category: GORM - Data Access Toolkit
     title: GORM Neo4j
     url: https://gorm.grails.org/latest/neo4j/manual/index.html
   gormgraphql:
-    categoryUrl: https://gorm.grails.org
+    categoryUrl: https://docs.grails.org/latest/grails-data/
     categoryImage: '[%url]/images/gorm.svg'
     category: GORM - Data Access Toolkit
     title: Graphql
@@ -43,27 +43,27 @@ modules:
     categoryImage: '[%url]/images/views.svg'
     category: Views
     title: GSP
-    url: https://gsp.grails.org
+    url: https://docs.grails.org/latest/guide/theWebLayer.html#gsp
   jsonviews:
     categoryImage: '[%url]/images/views.svg'
     category: Views
     title: JSON Views
-    url: https://views.grails.org/latest/
+    url: https://docs.grails.org/latest/guide/theWebLayer.html#gson
   markupviews:
     categoryImage: '[%url]/images/views.svg'
     category: Views
     title: Markup Views
-    url: https://views.grails.org/latest/#_markup_views
+    url: https://docs.grails.org/latest/guide/theWebLayer.html#markup
   springsecuritycore:
     categoryImage: '[%url]/images/security.svg'
     category: Security
     title: Spring Security Core
-    url: https://grails-plugins.github.io/grails-spring-security-core/
+    url: https://apache.github.io/grails-spring-security/7.0.0-M3/core-plugin/guide/
   springsecurityrest:
     categoryImage: '[%url]/images/security.svg'
     category: Security
     title: Spring Security REST
-    url: https://github.com/alvarosanchez/grails-spring-security-rest
+    url: https://apache.github.io/grails-spring-security/7.0.0-M3/rest-plugin/guide/
   springsecurityappinfo:
     categoryImage: '[%url]/images/security.svg'
     category: Security
@@ -73,22 +73,27 @@ modules:
     categoryImage: '[%url]/images/security.svg'
     category: Security
     title: Spring Security - UI
-    url: https://github.com/grails-plugins/grails-spring-security-ui
+    url: https://apache.github.io/grails-spring-security/7.0.0-M3/ui-plugin/guide/
   springsecurityacl:
     categoryImage: '[%url]/images/security.svg'
     category: Security
     title: Spring Security - ACL
-    url: https://github.com/grails-plugins/grails-spring-security-acl
+    url: https://apache.github.io/grails-spring-security/7.0.0-M3/acl-plugin/guide/
   springsecurityldap:
     categoryImage: '[%url]/images/security.svg'
     category: Security
     title: Spring Security - LDAP
-    url: https://grails-plugins.github.io/grails-spring-security-ldap/
+    url: https://apache.github.io/grails-spring-security/7.0.0-M3/ldap-plugin/guide/
   springsecuritycas:
     categoryImage: '[%url]/images/security.svg'
     category: Security
     title: Spring Security - CAS
-    url: https://grails-plugins.github.io/grails-spring-security-cas/
+    url: https://apache.github.io/grails-spring-security/7.0.0-M3/cas-plugin/guide/
+  springsecurityoauth2:
+    categoryImage: '[%url]/images/security.svg'
+    category: Security
+    title: Spring Security - Oauth2
+    url: https://apache.github.io/grails-spring-security/7.0.0-M3/oauth2-plugin/guide/
   springsecuritykerberos:
     categoryImage: '[%url]/images/security.svg'
     category: Security
@@ -98,7 +103,7 @@ modules:
     categoryImage: '[%url]/images/relationaldb.svg'
     category: Database
     title: Database Migration Plugin
-    url: https://grails-plugins.github.io/grails-database-migration/3.0.x/index.html
+    url: https://docs.grails.org/latest/grails-data/hibernate5/manual/index.html#databaseMigration
   buildstatus:
     categoryImage: '[%url]/images/buildstatus.svg'
     category: Build Status
