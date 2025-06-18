@@ -64,14 +64,14 @@ class DownloadPage {
                             a(href: binaryUrl(version, 'grails-wrapper', '.asc'), 'ASC')
                         }
                         li {
-                            a(href: sourceUrl(version, '','grails-spring-security', 'spring-security'), 'Grails Spring Security Plugin Source')
-                            a(href: sourceUrl(version, '.sha512','grails-spring-security', 'spring-security'), 'SHA512')
-                            a(href: sourceUrl(version, '.asc','grails-spring-security', 'spring-security'), 'ASC')
+                            a(href: sourceUrl(version, '', 'grails-spring-security', 'spring-security'), 'Grails Spring Security Plugin Source')
+                            a(href: sourceUrl(version, '.sha512', 'grails-spring-security', 'spring-security'), 'SHA512')
+                            a(href: sourceUrl(version, '.asc', 'grails-spring-security', 'spring-security'), 'ASC')
                         }
                         li {
-                            a(href: sourceUrl('5.0.0-M4', '','grails-redis',  'redis'), 'Grails Redis 5.0.0-M4 Plugin Source')
+                            a(href: sourceUrl('5.0.0-M4', '', 'grails-redis', 'redis'), 'Grails Redis 5.0.0-M4 Plugin Source')
                             a(href: sourceUrl('5.0.0-M4', '.sha512', 'grails-redis', 'redis'), 'SHA512')
-                            a(href: sourceUrl('5.0.0-M4', '.asc','grails-redis', 'redis'), 'ASC')
+                            a(href: sourceUrl('5.0.0-M4', '.asc', 'grails-redis', 'redis'), 'ASC')
                         }
                     } else {
                         li {
