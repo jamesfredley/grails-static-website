@@ -109,3 +109,8 @@ modules:
     category: Build Status
     title: Build Status
     url: '[%url]/buildstatus.html'
+  redis:
+    title: Redis
+    url: https://github.com/apache/grails-redis?tab=readme-ov-file#grails-7
+    categoryImage: '[%url]/images/documentation.svg'
+    category: Data
