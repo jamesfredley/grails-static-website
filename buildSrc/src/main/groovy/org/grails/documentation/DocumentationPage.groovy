@@ -119,6 +119,7 @@ class DocumentationPage {
                     mkp.yieldUnescaped(renderCategory(categories.find { it.title == 'Views' }))
                     mkp.yieldUnescaped(renderCategory(categories.find { it.title == 'Async' }))
                     mkp.yieldUnescaped(renderCategory(categories.find { it.title == 'Database' }))
+                    mkp.yieldUnescaped(renderCategory(categories.find { it.title == 'Redis' }))
                 }
 
             }
