@@ -26,7 +26,7 @@ import groovy.xml.MarkupBuilder
 class DownloadPage {
 
     static String binaryUrl(String version, String artifact, String ext = '', String directory = 'core') {
-        "https://www.apache.org/dyn/closer.lua/grails/core/${directory}/${version}/distribution/apache-${artifact}-${version}-incubating-bin.zip${ext}?action=download"
+        "https://www.apache.org/dyn/closer.lua/grails/${directory}/${version}/distribution/apache-${artifact}-${version}-incubating-bin.zip${ext}?action=download"
 
     }
 
