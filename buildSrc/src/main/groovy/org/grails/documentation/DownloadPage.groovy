@@ -81,11 +81,13 @@ class DownloadPage {
                     li {
                         a(href: "https://github.com/apache/grails-core/releases/tag/v${version}", 'Grails Release Notes')
                     }
-                    li {
-                        a(href: "https://github.com/apache/grails-spring-security/releases/tag/v${version}", 'Grails Spring Security Plugin Release Notes')
-                    }
-                    li {
-                        a(href: "https://github.com/apache/grails-redis/releases/tag/v5.0.0-M4", 'Grails Redis 5.0.0-M4 Plugin Release Notes')
+                    if (version.startsWith('7')) {
+                        li {
+                            a(href: "https://github.com/apache/grails-spring-security/releases/tag/v${version}", 'Grails Spring Security Plugin Release Notes')
+                        }
+                        li {
+                            a(href: "https://github.com/apache/grails-redis/releases/tag/v5.0.0-M4", 'Grails Redis 5.0.0-M4 Plugin Release Notes')
+                        }
                     }
                 }
             }
