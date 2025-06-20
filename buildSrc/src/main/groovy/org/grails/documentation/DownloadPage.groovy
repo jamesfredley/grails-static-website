@@ -113,7 +113,6 @@ class DownloadPage {
             html.div(class: "twocolumns") {
                 html.div(class: "odd column"){
                     h3(class: 'columnheader', style: 'margin-bottom: 10px;', 'Source and Binary Releases')
-                    p 'NOTE: Versions prior to 7.0.0-M4 are not ASF releases. Links to those releases are provided here as a convenience.'
                     mkp.yieldUnescaped "We provide OpenPGP signatures ('.asc') files and checksums ('.sha512') for every release artifact. We recommend that you "
                     a(href: 'https://www.apache.org/info/verification.html', 'verify')
                     mkp.yieldUnescaped " the integrity of downloaded files by generating your own checksums and match them against ours, and checking signatures using the "
@@ -126,6 +125,7 @@ class DownloadPage {
 
                     mkp.yieldUnescaped(renderDownload('snapshot'))
 
+                    p 'NOTE: The following versions are not ASF releases. Links to these releases are provided here as a convenience.'
                     mkp.yieldUnescaped(renderDownload(latest.versionText))
 
                     h3(class:'columnheader', 'Older Versions')

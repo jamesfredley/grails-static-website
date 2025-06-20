@@ -104,6 +104,11 @@ modules:
     category: Database
     title: Database Migration Plugin
     url: https://docs.grails.org/latest/grails-data/hibernate5/manual/index.html#databaseMigration
+  redis:
+    categoryImage: '[%url]/images/documentation.svg'
+    category: Redis
+    title: Redis
+    url: https://github.com/apache/grails-redis?tab=readme-ov-file#grails-7
   buildstatus:
     categoryImage: '[%url]/images/buildstatus.svg'
     category: Build Status
