@@ -26,12 +26,12 @@ import groovy.xml.MarkupBuilder
 class DownloadPage {
 
     static String binaryUrl(String version, String artifact = 'grails', String ext = '', String directory = 'core') {
-        "https://www.apache.org/dyn/closer.lua/grails/${directory}/${version}/distribution/apache-${artifact}-${version}-incubating-bin.zip${ext}?action=download"
+        "https://www.apache.org/dyn/closer.lua/incubator/grails/${directory}/${version}/distribution/apache-${artifact}-${version}-incubating-bin.zip${ext}?action=download"
 
     }
 
     static String sourceUrl(String version, String artifact = 'grails', String ext = '', String directory = 'core') {
-        "https://www.apache.org/dyn/closer.lua/grails/${directory}/${version}/sources/apache-${artifact}-${version}-incubating-src.zip${ext}?action=download"
+        "https://www.apache.org/dyn/closer.lua/incubator/grails/${directory}/${version}/sources/apache-${artifact}-${version}-incubating-src.zip${ext}?action=download"
     }
 
     @CompileDynamic
@@ -116,7 +116,7 @@ class DownloadPage {
                     mkp.yieldUnescaped "We provide OpenPGP signatures ('.asc') files and checksums ('.sha512') for every release artifact. We recommend that you "
                     a(href: 'https://www.apache.org/info/verification.html', 'verify')
                     mkp.yieldUnescaped " the integrity of downloaded files by generating your own checksums and match them against ours, and checking signatures using the "
-                    a(href: 'https://www.apache.org/dyn/closer.lua/grails/KEYS?action=download', 'KEYS')
+                    a(href: 'https://www.apache.org/dyn/closer.lua/incubator/grails/KEYS?action=download', 'KEYS')
                     mkp.yieldUnescaped " file which contains the Grails OpenPGP release keys."
                     p ''
                     if (preRelease > latest) {
