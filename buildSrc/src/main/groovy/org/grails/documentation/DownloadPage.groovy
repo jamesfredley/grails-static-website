@@ -26,12 +26,12 @@ import groovy.xml.MarkupBuilder
 class DownloadPage {
 
     static String binaryUrl(String version, String artifact = 'grails', String ext = '', String directory = 'core') {
-        "https://www.apache.org/dyn/closer.lua/grails/${directory}/${version}/distribution/apache-${artifact}-${version}-incubating-bin.zip${ext}?action=download"
+        "https://www.apache.org/dyn/closer.lua/incubator/grails/${directory}/${version}/distribution/apache-${artifact}-${version}-incubating-bin.zip${ext}?action=download"
 
     }
 
     static String sourceUrl(String version, String artifact = 'grails', String ext = '', String directory = 'core') {
-        "https://www.apache.org/dyn/closer.lua/grails/${directory}/${version}/sources/apache-${artifact}-${version}-incubating-src.zip${ext}?action=download"
+        "https://www.apache.org/dyn/closer.lua/incubator/grails/${directory}/${version}/sources/apache-${artifact}-${version}-incubating-src.zip${ext}?action=download"
     }
 
     @CompileDynamic
