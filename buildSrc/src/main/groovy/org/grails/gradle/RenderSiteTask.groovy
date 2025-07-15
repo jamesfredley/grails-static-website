@@ -1,6 +1,7 @@
 package org.grails.gradle
 
 import edu.umd.cs.findbugs.annotations.Nullable
+import groovy.transform.CompileDynamic
 import groovy.transform.CompileStatic
 import org.grails.ContentAndMetadata
 import org.grails.Page
@@ -20,6 +21,7 @@ import org.gradle.api.tasks.InputDirectory
 import org.gradle.api.tasks.OutputDirectory
 import org.gradle.api.tasks.TaskAction
 import static groovy.io.FileType.FILES
+import groovy.time.TimeCategory
 
 import javax.annotation.Nonnull
 import javax.validation.constraints.NotNull
@@ -277,10 +279,22 @@ class RenderSiteTask extends DefaultTask {
         BlogTask.MMMM_D_YYYY.format(BlogTask.parseDate(date))
     }
 
+    @CompileDynamic
+    static String formatDateMinus6Months(String date) {
+        use(TimeCategory) {
+            BlogTask.MMMM_D_YYYY.format(BlogTask.parseDate(date) - 6.months)
+        }
+    }
+
+    static String URLEncode(String date) {
+        URLEncoder.encode(date, "UTF-8")
+    }
+
     static String replaceLineWithMetadata(String line, Map<String, String> metadata) {
         Map<String, String> m = new HashMap<>(metadata)
         if (m.containsKey('date')) {
             m['date'] = formatDate(m['date'])
+            m['6MonthsBackForGitHub'] = '?from=' + URLEncode(formatDateMinus6Months(m['date'])) + '&to=' + URLEncode(formatDate(m['date']))
         }
         for (String metadataKey : m.keySet()) {
             if (line.contains("[%${metadataKey}]".toString())) {
