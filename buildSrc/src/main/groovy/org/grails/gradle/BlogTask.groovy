@@ -397,7 +397,7 @@ class BlogTask extends DefaultTask {
                     mkp.yield RenderSiteTask.formatDate(htmlPost.metadata.date)
                 }
                 h2 {
-                    String title = htmlPost.metadata.title
+                    String title = RenderSiteTask.replaceLineWithMetadata(htmlPost.metadata.title, htmlPost.metadata.toMap())
                     if (title.length() > MAX_TITLE_LENGTH) {
                         title ="${title.substring(0, MAX_TITLE_LENGTH)}..."
                     }
